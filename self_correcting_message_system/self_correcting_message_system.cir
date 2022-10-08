@@ -1,0 +1,35 @@
+* C:\Users\User\Desktop\esim\self_correcting_message_system\self_correcting_message_system.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/08/22 23:18:19
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+SC01  Net-_SC01-Pad1_ Net-_SC01-Pad2_ GND sky130_fd_pr__res_generic_nd		
+SC02  Net-_SC02-Pad1_ Net-_SC01-Pad1_ GND sky130_fd_pr__res_generic_nd		
+SC03  GND Net-_SC02-Pad1_ GND sky130_fd_pr__res_generic_nd		
+X01  Net-_SC01-Pad2_ Net-_X01-Pad2_ Net-_SC01-Pad1_ Sine window01 GND avsd_opamp		
+X02  Net-_SC01-Pad2_ Net-_X01-Pad2_ Sine Net-_SC02-Pad1_ window02 GND avsd_opamp		
+v02  Net-_SC01-Pad2_ GND DC		
+v03  GND Net-_X01-Pad2_ DC		
+v01  Sine GND sine		
+U01  Sine plot_v1		
+U03  window02 plot_v1		
+U02  window01 plot_v1		
+U101  window01 Net-_U101-Pad2_ adc_bridge_1		
+U102  Net-_U101-Pad2_ Net-_U102-Pad2_ vinayak_inverter		
+U103  Net-_U102-Pad2_ Net-_U103-Pad2_ vinayak_inverter		
+U104  Net-_U103-Pad2_ winv01 dac_bridge_1		
+U105  winv01 plot_v1		
+U106  window02 Net-_U106-Pad2_ adc_bridge_1		
+U107  Net-_U106-Pad2_ Net-_U107-Pad2_ vinayak_inverter		
+U108  Net-_U107-Pad2_ Net-_U108-Pad2_ vinayak_inverter		
+U109  Net-_U108-Pad2_ winv02 dac_bridge_1		
+U110  winv02 plot_v1		
+U202  Net-_U201-Pad3_ Net-_U201-Pad4_ Net-_U202-Pad3_ d_xnor		
+U203  Net-_U202-Pad3_ XNOR dac_bridge_1		
+U201  winv01 winv02 Net-_U201-Pad3_ Net-_U201-Pad4_ adc_bridge_2		
+U204  XNOR plot_v1		
+
+.end
