@@ -10,9 +10,11 @@
 - [Table of Contents](#table-of-contents)
 - [Abstract](#abstract)
 - [Description](#description)
-- [Circuit](#circuit)
+- [Circuit Design using eSim](#circuit-design-using-esim)
+  - [Self Correcting Message System](#self-correcting-message-system)
 - [Waveforms](#waveforms)
-- [Open-Source Softwares Used](#open-source-softwares-used)
+- [Software Tools Used](#software-tools-used)
+- [Circuit](#circuit)
 - [Acknowlegdements](#acknowlegdements)
   - [Social media IDs:](#social-media-ids)
 
@@ -24,24 +26,113 @@ This paper presents, how to send a self-correcting message with the help of hamm
 ## Description
 Self-Correcting message system works for each 11 bits data which are further converted to 16 bits which includes 4 bits for redundancy for parity check and 1 bit is extended parity check. In this design, even parity is considered that is number of 1’s in data bits is even. Before transmitting the data, parity bits are generated for each 11 bit of data and transmits the 16 bits of data. And after transmission some checks are performed and which can be used for correcting any errors. 
 
+## Circuit Design using eSim
+
+### Self Correcting Message System
+
+<img align="center" src="./img/Circuit/Self%20Correcting%20Message%20System.jpg" alt="Image of Self Correcting Message System">
+
+<br>
+
+1. Window Comparator
+
+<img align="center" src="./img/Circuit/window%20comparator.jpg" alt="Window Comparator">
+
+<br>
+
+2. XNOR of Window Comparator output
+
+<img align="center" src="./img/Circuit/xnor%20of%20WC%20INV%20output.jpg" alt="XNOR of Window Comparator output">
+
+<br>
+
+3. Frequency Divider and pulse generator
+
+<img align="center" src="./img/Circuit/Freq%20Divider%20and%20pulse%20generator.jpg" alt="Frequency Divider and pulse generator">
+
+<br>
+
+4. Hamming Code Encoder
+
+<img align="center" src="./img/Circuit/Hamming%20Code%20Encoder.jpg" alt="Hamming Code Encoder">
+
+<br>
+
+5. Hamming Code Decoder
+
+<img align="center" src="./img/Circuit/Hamming%20Code%20Decoder.jpg" alt="Hamming Code Decoder">
+
+<br>
+
+
+## Waveforms
+
+<br>
+
+1. Window Comparator
+
+<img align="center" src="./img/Waveform/window%20comparator.svg" alt="Window Comparator">
+
+<br>
+
+2. XNOR of Window Comparator Inverted output
+
+<img align="center" src="./img/Circuit/xnor%20of%20WC%20INV%20output.jpg" alt="XNOR of Window Comparator output">
+
+<br>
+
+3. Frequency Divider and pulse generator
+
+<img align="center" src="./img/Circuit/Freq%20Divider%20and%20pulse%20generator.jpg" alt="Frequency Divider and pulse generator">
+
+<br>
+
+4. Hamming Code Encoder
+
+<img align="center" src="./img/Circuit/Hamming%20Code%20Encoder.jpg" alt="Hamming Code Encoder">
+
+<br>
+
+5. Hamming Code Decoder
+
+<img align="center" src="./img/Circuit/Hamming%20Code%20Decoder.jpg" alt="Hamming Code Decoder">
+
+<br>
+
+
+
+## Software Tools Used
+
+<br>
+
+1. [eSim](https://esim.fossee.in/home) 
+
+> eSim is a free and open-sourced EDA tool for circuit design, simulation, analysis and PCB design. It is an integrated tool built using free/libre and open source software such as KiCad, Ngspice, Verilator, makerchip-app, sandpiper-saas and GHDL. eSim is released under GPL.
+
+2. [KiCad](https://www.kicad.org/)
+
+> KiCad's Schematic Editor supports everything from the most basic schematic to a complex hierarchical design with hundreds of sheets. It helps to create our own custom symbols or use some of the thousands found in the official KiCad library. We can verify our design with integrated SPICE simulator and electrical rules checker.
+
+3. [Ngspice](http://ngspice.sourceforge.net/)
+
+>  Ngspice is a mixed-level/mixed-signal electronic circuit simulator. Ngspice implements three classes of analysis: nonlinear DC analyses, Nonlinear transient analyses, linear AC analyses.
+   
+4. [Verilator](https://www.veripool.org/verilator/)
+
+>  Verilator is a free and open-source software tool which converts Verilog code to a cycle-accurate behavioral model in C++ or SystemC.
+   
+5. [Makerchip](https://www.makerchip.com/)
+>  A web-based IDE that is used to design and simulate digital circuits using Verilog, and the language extension of Verilog, TL-Verilog.  
+
+6. [SkyWater SKY130 PDK](https://skywater-pdk.rtfd.io/)
+
+> The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at SkyWater’s facility.
+
 ## Circuit
 * Hamming Encoder Circuit
 ![image](https://user-images.githubusercontent.com/66154908/194748814-c8b815d2-48fe-4598-82af-caf49ff48464.png)
 
 
-
-## Waveforms
-
-* Hamming Encoder Data Bits
-![Hamming Encoder Output](https://user-images.githubusercontent.com/66154908/194748906-7bcb3f5d-7ddc-4167-a585-4aab6b26c9b3.jpg)
-
-
-## Open-Source Softwares Used
-* [esim](https://esim.fossee.in/downloads)
-* [KiCad](https://www.kicad.org/)
-* [NGHDL](https://github.com/fossee/nghdl/)
-* [Makerchip](https://www.makerchip.com/)
-* [SkyWater SKY130 PDK](https://skywater-pdk.rtfd.io/)
 
 ## Acknowlegdements
 1. [FOSSEE](https://fossee.in/), [IIT Bombay](http://iitb.ac.in/)
