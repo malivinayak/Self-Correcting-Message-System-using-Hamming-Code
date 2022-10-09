@@ -19,29 +19,10 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Abstract
-This paper presents, how to send a self-correcting
-message with the help of hamming code. Hamming code is
-an error detection and correction technique. Message bits
-are received in signal form and then check if there any bits
-get flipped due to noise and if is so then message get
-corrected by itself. Self-correcting message applies its 5
-extended parity bits to check for each 11-bit data. If one bit
-get flipped, then that error bit is identified and corrected by
-this system, and if 2 bits get flipped then machine is able to
-detect that 2 errors are present. This system can be also used
-in Compact Disc (CD) and Digital Versatile Disc (DVD)
+This paper presents, how to send a self-correcting message with the help of hamming code. Hamming code is an error detection and correction technique. Message bits are received in signal form and then check if there any bits get flipped due to noise and if is so then message get corrected by itself. Self-correcting message applies its 5 extended parity bits to check for each 11-bit data. If one bit get flipped, then that error bit is identified and corrected by this system, and if 2 bits get flipped then machine is able to detect that 2 errors are present. This system can be also used in Compact Disc (CD) and Digital Versatile Disc (DVD)
 
 ## Description
-Self-Correcting message system works for each 11
-bits data which are further converted to 16 bits
-which includes 4 bits for redundancy for parity
-check and 1 bit is extended parity check. In this
-design, even parity is considered that is number of
-1’s in data bits is even. Before transmitting the data,
-parity bits are generated for each 11 bit of data and
-transmits the 16 bits of data. And after transmission
-some checks are performed and which can be used
-for correcting any errors.
+Self-Correcting message system works for each 11 bits data which are further converted to 16 bits which includes 4 bits for redundancy for parity check and 1 bit is extended parity check. In this design, even parity is considered that is number of 1’s in data bits is even. Before transmitting the data, parity bits are generated for each 11 bit of data and transmits the 16 bits of data. And after transmission some checks are performed and which can be used for correcting any errors. 
 
 ## Circuit
 * Hamming Encoder Circuit
@@ -71,9 +52,9 @@ for correcting any errors.
 6. [Google](https://www.google.co.in/)
 
 ### Social media IDs:
-SPOKEN TUTORIAL: https://spoken-tutorial.org/
-SLACK: https://join.slack.com/t/fossee-iitbombay/shared_invite/zt-1hjcs4lxf-iJbNRcnmtfXYOc9ahEvp1g
-FACEBOOK: https://www.facebook.com/FOSSEENMEICT/
-TWITTER: https://twitter.com/FOSSEE/
-INSTAGRAM: https://www.instagram.com/fossee_nmeict/
+SPOKEN TUTORIAL: https://spoken-tutorial.org/ \
+SLACK: https://join.slack.com/t/fossee-iitbombay/shared_invite/zt-1hjcs4lxf-iJbNRcnmtfXYOc9ahEvp1g \
+FACEBOOK: https://www.facebook.com/FOSSEENMEICT/ \
+TWITTER: https://twitter.com/FOSSEE/ \
+INSTAGRAM: https://www.instagram.com/fossee_nmeict/ \
 LINKEDIN: https://www.linkedin.com/company/fossee-iitb/
