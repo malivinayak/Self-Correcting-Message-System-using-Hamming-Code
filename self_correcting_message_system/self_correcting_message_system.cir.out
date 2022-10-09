@@ -37,10 +37,31 @@ v01  sine gnd sine(0 1.8 2 0 0)
 * u202  net-_u201-pad3_ net-_u201-pad4_ net-_u202-pad3_ d_xnor
 * u301  freqin net-_u301-pad2_ adc_bridge_1
 * u302  net-_u301-pad2_ net-_u302-pad2_ vinayak_frequency_divider
-* u303  net-_u302-pad2_ frepout dac_bridge_1
-* u305  frepout plot_v1
+* u303  net-_u302-pad2_ freqout dac_bridge_1
+* u305  freqout plot_v1
 * u304  freqin plot_v1
-v303  freqin gnd sine(0 7 2 0 0)
+v303  freqin gnd sine(0 8 2 0 0)
+* u401  winv02 gnd xnor winv02 freqout winv01 gnd winv01 net-_u401-pad9_ net-_u401-pad10_ net-_u401-pad11_ net-_u401-pad12_ net-_u401-pad13_ net-_u401-pad14_ net-_u401-pad15_ net-_u401-pad16_ adc_bridge_8
+* u402  xnor freqout gnd net-_u402-pad4_ net-_u402-pad5_ net-_u402-pad6_ adc_bridge_3
+* u404  net-_u403-pad12_ net-_u403-pad13_ net-_u403-pad14_ net-_u403-pad15_ net-_u403-pad16_ net-_u403-pad17_ net-_u403-pad18_ net-_u403-pad19_ d15 d14 d13 d12 d11 d10 d9 d8 dac_bridge_8
+* u405  net-_u403-pad20_ net-_u403-pad21_ net-_u403-pad22_ net-_u403-pad23_ net-_u403-pad24_ net-_u403-pad25_ net-_u403-pad26_ net-_u403-pad27_ d7 d6 d5 p0 p1 p2 p3 p4 dac_bridge_8
+* u4000  p4 plot_v1
+* u4001  p3 plot_v1
+* u4002  p2 plot_v1
+* u4003  p1 plot_v1
+* u4004  p0 plot_v1
+* u4005  d5 plot_v1
+* u4006  d6 plot_v1
+* u4007  d7 plot_v1
+* u4008  d8 plot_v1
+* u4009  d9 plot_v1
+* u4015  d15 plot_v1
+* u4014  d14 plot_v1
+* u4013  d13 plot_v1
+* u4012  d12 plot_v1
+* u4011  d11 plot_v1
+* u4010  d10 plot_v1
+* u403  net-_u401-pad9_ net-_u401-pad10_ net-_u401-pad11_ net-_u401-pad12_ net-_u401-pad13_ net-_u401-pad14_ net-_u401-pad15_ net-_u401-pad16_ net-_u402-pad4_ net-_u402-pad5_ net-_u402-pad6_ net-_u403-pad12_ net-_u403-pad13_ net-_u403-pad14_ net-_u403-pad15_ net-_u403-pad16_ net-_u403-pad17_ net-_u403-pad18_ net-_u403-pad19_ net-_u403-pad20_ net-_u403-pad21_ net-_u403-pad22_ net-_u403-pad23_ net-_u403-pad24_ net-_u403-pad25_ net-_u403-pad26_ net-_u403-pad27_ vinayak_hamming_ecoder
 a1 [window01 ] [net-_u101-pad2_ ] u101
 a2 [net-_u101-pad2_ ] [net-_u102-pad2_ ] u102
 a3 [net-_u102-pad2_ ] [net-_u103-pad2_ ] u103
@@ -54,7 +75,12 @@ a10 [winv01 winv02 ] [net-_u201-pad3_ net-_u201-pad4_ ] u201
 a11 [net-_u201-pad3_ net-_u201-pad4_ ] net-_u202-pad3_ u202
 a12 [freqin ] [net-_u301-pad2_ ] u301
 a13 [net-_u301-pad2_ ] [net-_u302-pad2_ ] u302
-a14 [net-_u302-pad2_ ] [frepout ] u303
+a14 [net-_u302-pad2_ ] [freqout ] u303
+a15 [winv02 gnd xnor winv02 freqout winv01 gnd winv01 ] [net-_u401-pad9_ net-_u401-pad10_ net-_u401-pad11_ net-_u401-pad12_ net-_u401-pad13_ net-_u401-pad14_ net-_u401-pad15_ net-_u401-pad16_ ] u401
+a16 [xnor freqout gnd ] [net-_u402-pad4_ net-_u402-pad5_ net-_u402-pad6_ ] u402
+a17 [net-_u403-pad12_ net-_u403-pad13_ net-_u403-pad14_ net-_u403-pad15_ net-_u403-pad16_ net-_u403-pad17_ net-_u403-pad18_ net-_u403-pad19_ ] [d15 d14 d13 d12 d11 d10 d9 d8 ] u404
+a18 [net-_u403-pad20_ net-_u403-pad21_ net-_u403-pad22_ net-_u403-pad23_ net-_u403-pad24_ net-_u403-pad25_ net-_u403-pad26_ net-_u403-pad27_ ] [d7 d6 d5 p0 p1 p2 p3 p4 ] u405
+a19 [net-_u401-pad9_ net-_u401-pad10_ net-_u401-pad11_ net-_u401-pad12_ net-_u401-pad13_ net-_u401-pad14_ net-_u401-pad15_ net-_u401-pad16_ net-_u402-pad4_ net-_u402-pad5_ net-_u402-pad6_ ] [net-_u403-pad12_ net-_u403-pad13_ net-_u403-pad14_ net-_u403-pad15_ net-_u403-pad16_ net-_u403-pad17_ net-_u403-pad18_ net-_u403-pad19_ net-_u403-pad20_ net-_u403-pad21_ net-_u403-pad22_ ] [net-_u403-pad23_ ] [net-_u403-pad24_ ] [net-_u403-pad25_ ] [net-_u403-pad26_ ] [net-_u403-pad27_ ] u403
 * Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
 .model u101 adc_bridge(in_low=0 in_high=1 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
 * Schematic Name:                             vinayak_inverter, NgSpice Name: vinayak_inverter
@@ -83,13 +109,33 @@ a14 [net-_u302-pad2_ ] [frepout ] u303
 .model u302 vinayak_frequency_divider(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
 * Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
 .model u303 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
-.tran 0.1e-00 20e-00 0e-00
+* Schematic Name:                             adc_bridge_8, NgSpice Name: adc_bridge
+.model u401 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_3, NgSpice Name: adc_bridge
+.model u402 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u404 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u405 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             vinayak_hamming_ecoder, NgSpice Name: vinayak_hamming_ecoder
+.model u403 vinayak_hamming_ecoder(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+.tran 0.1e-00 5e-00 0e-00
 
 * Control Statements 
 .control
 run
 print allv > plot_data_v.txt
 print alli > plot_data_i.txt
-plot v(freqin) v(frepout)
+plot v(sine)
+plot v(window02)
+plot v(window01)
+plot v(winv01)
+plot v(winv02)
+plot v(xnor)
+plot v(in1)
+plot v(in2)
+plot v(freqout)
+plot v(freqin)
+plot v(p0) v(p1)+7 v(p2)+14 v(p3)+21 v(p4)+28 v(d5)+35 v(d6)+42 v(d7)+49 v(d8)+56 v(d9)+63 v(d10)+70 v(d11)+77 v(d12)+84 v(d13)+91 v(d14)+98 v(d15)+105
 .endc
 .end

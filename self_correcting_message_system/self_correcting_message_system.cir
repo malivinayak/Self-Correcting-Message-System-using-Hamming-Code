@@ -1,6 +1,6 @@
 * E:\Self\Hackathon\Mixed_Signal_SoC_Design_Marathon\Vinayak\Self-Correcting-Message-System-using-Hamming-Code\self_correcting_message_system\self_correcting_message_system.cir
 
-* EESchema Netlist Version 1.1 (Spice format) creation date: 10/09/22 13:00:29
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/09/22 14:33:38
 
 * To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
 * To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
@@ -35,9 +35,30 @@ U05  In2 plot_v1
 U202  Net-_U201-Pad3_ Net-_U201-Pad4_ Net-_U202-Pad3_ d_xnor		
 U301  freqIn Net-_U301-Pad2_ adc_bridge_1		
 U302  Net-_U301-Pad2_ Net-_U302-Pad2_ vinayak_frequency_divider		
-U303  Net-_U302-Pad2_ frepOUT dac_bridge_1		
-U305  frepOUT plot_v1		
+U303  Net-_U302-Pad2_ freqOUT dac_bridge_1		
+U305  freqOUT plot_v1		
 U304  freqIn plot_v1		
 v303  freqIn GND sine		
+U401  winv02 GND XNOR winv02 freqOUT winv01 GND winv01 Net-_U401-Pad9_ Net-_U401-Pad10_ Net-_U401-Pad11_ Net-_U401-Pad12_ Net-_U401-Pad13_ Net-_U401-Pad14_ Net-_U401-Pad15_ Net-_U401-Pad16_ adc_bridge_8		
+U402  XNOR freqOUT GND Net-_U402-Pad4_ Net-_U402-Pad5_ Net-_U402-Pad6_ adc_bridge_3		
+U404  Net-_U403-Pad12_ Net-_U403-Pad13_ Net-_U403-Pad14_ Net-_U403-Pad15_ Net-_U403-Pad16_ Net-_U403-Pad17_ Net-_U403-Pad18_ Net-_U403-Pad19_ D15 D14 D13 D12 D11 D10 D9 D8 dac_bridge_8		
+U405  Net-_U403-Pad20_ Net-_U403-Pad21_ Net-_U403-Pad22_ Net-_U403-Pad23_ Net-_U403-Pad24_ Net-_U403-Pad25_ Net-_U403-Pad26_ Net-_U403-Pad27_ D7 D6 D5 P0 P1 P2 P3 P4 dac_bridge_8		
+U4000  P4 plot_v1		
+U4001  P3 plot_v1		
+U4002  P2 plot_v1		
+U4003  P1 plot_v1		
+U4004  P0 plot_v1		
+U4005  D5 plot_v1		
+U4006  D6 plot_v1		
+U4007  D7 plot_v1		
+U4008  D8 plot_v1		
+U4009  D9 plot_v1		
+U4015  D15 plot_v1		
+U4014  D14 plot_v1		
+U4013  D13 plot_v1		
+U4012  D12 plot_v1		
+U4011  D11 plot_v1		
+U4010  D10 plot_v1		
+U403  Net-_U401-Pad9_ Net-_U401-Pad10_ Net-_U401-Pad11_ Net-_U401-Pad12_ Net-_U401-Pad13_ Net-_U401-Pad14_ Net-_U401-Pad15_ Net-_U401-Pad16_ Net-_U402-Pad4_ Net-_U402-Pad5_ Net-_U402-Pad6_ Net-_U403-Pad12_ Net-_U403-Pad13_ Net-_U403-Pad14_ Net-_U403-Pad15_ Net-_U403-Pad16_ Net-_U403-Pad17_ Net-_U403-Pad18_ Net-_U403-Pad19_ Net-_U403-Pad20_ Net-_U403-Pad21_ Net-_U403-Pad22_ Net-_U403-Pad23_ Net-_U403-Pad24_ Net-_U403-Pad25_ Net-_U403-Pad26_ Net-_U403-Pad27_ vinayak_hamming_ecoder		
 
 .end
