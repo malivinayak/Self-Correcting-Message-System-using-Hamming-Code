@@ -1,4 +1,4 @@
-<h1 align="center"> Self Correcting Message System using Hamming Code </h1>
+<h1 align="center"> Self Correcting Message System<br>using Hamming Code </h1>
 
 ## Acknowlegdements
 1. FOSSEE, IIT Bombay
