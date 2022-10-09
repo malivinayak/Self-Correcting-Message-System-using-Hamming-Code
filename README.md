@@ -2,7 +2,8 @@
 
 ## Circuit
 * Hamming Encoder Circuit
-![image](https://user-images.githubusercontent.com/66154908/194748515-41ba18cc-0041-45d7-962a-53a7960f57a9.png)
+![image](https://user-images.githubusercontent.com/66154908/194748814-c8b815d2-48fe-4598-82af-caf49ff48464.png)
+
 
 
 ## Waveforms
