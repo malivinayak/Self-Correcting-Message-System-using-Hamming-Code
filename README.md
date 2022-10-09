@@ -1,5 +1,17 @@
 <h1 align="center"> Self Correcting Message System<br>using Hamming Code </h1>
 
+## Table of Contents
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Table of Contents](#table-of-contents)
+- [Abstract](#abstract)
+- [Circuit](#circuit)
+- [Waveforms](#waveforms)
+- [Acknowlegdements](#acknowlegdements)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Abstract
 This paper presents, how to send a self-correcting
 message with the help of hamming code. Hamming code is
