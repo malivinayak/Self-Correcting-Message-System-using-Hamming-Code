@@ -10,6 +10,7 @@
 - [Table of Contents](#table-of-contents)
 - [Abstract](#abstract)
 - [Description](#description)
+  - [Thought / Concept](#thought--concept)
 - [Circuit Design using eSim](#circuit-design-using-esim)
   - [Self Correcting Message System](#self-correcting-message-system)
 - [Waveforms](#waveforms)
@@ -24,6 +25,17 @@ This paper presents, how to send a self-correcting message with the help of hamm
 
 ## Description
 Self-Correcting message system works for each 11 bits data which are further converted to 16 bits which includes 4 bits for redundancy for parity check and 1 bit is extended parity check. In this design, even parity is considered that is number of 1’s in data bits is even. Before transmitting the data, parity bits are generated for each 11 bit of data and transmits the 16 bits of data. And after transmission some checks are performed and which can be used for correcting any errors. 
+
+### Thought / Concept
+
+1. Extended Hamming Code Technique for (15+1,11)
+
+<img align="center" src="https://user-images.githubusercontent.com/66154908/194774606-10669579-76a4-459b-8940-5d5f279436c2.png" alt="Extended Hamming Code Technique for (15+1,11)">
+
+2. Circuit Design Approach
+
+<img align="center" src="https://user-images.githubusercontent.com/66154908/194774616-92ce7ac7-13a1-4ab9-8547-a67554d87fd2.png" alt="ircuit Design Approach">
+
 
 ## Circuit Design using eSim
 
