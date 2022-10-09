@@ -1,6 +1,6 @@
-update=22/05/2015 07:44:53
+update=10/09/22 11:58:29
 version=1
-last_client=kicad
+last_client=eeschema
 [general]
 version=1
 RootSch=
@@ -71,3 +71,13 @@ LibName37=eSim_Nghdl
 LibName38=eSim_Ngveri
 LibName39=eSim_SKY130
 LibName40=eSim_SKY130_Subckts
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Spice
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

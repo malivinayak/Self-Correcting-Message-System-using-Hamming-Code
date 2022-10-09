@@ -1,6 +1,6 @@
 * E:\Self\Hackathon\Mixed_Signal_SoC_Design_Marathon\Vinayak\Self-Correcting-Message-System-using-Hamming-Code\self_correcting_message_system\self_correcting_message_system.cir
 
-* EESchema Netlist Version 1.1 (Spice format) creation date: 10/09/22 11:42:25
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/09/22 13:00:29
 
 * To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
 * To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
@@ -33,5 +33,11 @@ U204  XNOR plot_v1
 U04  In1 plot_v1		
 U05  In2 plot_v1		
 U202  Net-_U201-Pad3_ Net-_U201-Pad4_ Net-_U202-Pad3_ d_xnor		
+U301  freqIn Net-_U301-Pad2_ adc_bridge_1		
+U302  Net-_U301-Pad2_ Net-_U302-Pad2_ vinayak_frequency_divider		
+U303  Net-_U302-Pad2_ frepOUT dac_bridge_1		
+U305  frepOUT plot_v1		
+U304  freqIn plot_v1		
+v303  freqIn GND sine		
 
 .end

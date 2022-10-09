@@ -180,6 +180,20 @@ X B 3 -200 0 5 R 50 43 1 1 B
 ENDDRAW
 ENDDEF
 #
+# vinayak_frequency_divider
+#
+DEF vinayak_frequency_divider U 0 40 Y Y 1 F N
+F0 "U" 2850 1800 60 H V C CNN
+F1 "vinayak_frequency_divider" 2850 2000 60 H V C CNN
+F2 "" 2850 1950 60 H V C CNN
+F3 "" 2850 1950 60 H V C CNN
+DRAW
+S 2350 2100 3350 1700 0 1 0 N
+X clk0 1 2150 1900 200 R 50 50 1 1 I
+X out_clk0 2 3550 1900 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
 # vinayak_inverter
 #
 DEF vinayak_inverter U 0 40 Y Y 1 F N

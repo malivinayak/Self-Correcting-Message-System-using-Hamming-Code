@@ -419,139 +419,6 @@ Text GLabel -14000 -2600 0    60   Input ~ 0
 In1
 Text GLabel -14000 -850 0    60   Input ~ 0
 In2
-Wire Wire Line
-	-15200 1150 -15200 -3150
-Wire Wire Line
-	-15200 -3150 -14800 -3150
-Wire Wire Line
-	-14800 -1600 -15200 -1600
-Connection ~ -15200 -1600
-Wire Wire Line
-	-14800 100  -15200 100 
-Connection ~ -15200 100 
-Wire Wire Line
-	-14600 400  -14600 750 
-Wire Wire Line
-	-14600 750  -15200 750 
-Connection ~ -15200 750 
-Wire Wire Line
-	-14600 -200 -14600 -1300
-Wire Wire Line
-	-14600 -1900 -14600 -2850
-Wire Wire Line
-	-18550 650  -18550 450 
-Wire Wire Line
-	-13050 -2300 -18550 -2300
-Wire Wire Line
-	-18550 -2300 -18550 -450
-Wire Wire Line
-	-18800 -1050 -18550 -1050
-Connection ~ -18550 -1050
-Wire Wire Line
-	-13100 -900 -13500 -900
-Wire Wire Line
-	-13500 -900 -13500 -2300
-Connection ~ -13500 -2300
-Wire Wire Line
-	-13100 -700 -14600 -700
-Connection ~ -14600 -700
-Wire Wire Line
-	-13050 -2500 -14600 -2500
-Connection ~ -14600 -2500
-Wire Wire Line
-	-17750 -2850 -12450 -2850
-Wire Wire Line
-	-17750 -3600 -17750 -450
-Wire Wire Line
-	-12500 -1250 -12500 -1400
-Wire Wire Line
-	-12500 -1400 -13350 -1400
-Wire Wire Line
-	-13350 -1400 -13350 -2850
-Connection ~ -13350 -2850
-Wire Wire Line
-	-12450 -1950 -17000 -1950
-Wire Wire Line
-	-17000 -1950 -17000 -450
-Wire Wire Line
-	-12500 -350 -13150 -350
-Wire Wire Line
-	-13150 -350 -13150 -1950
-Connection ~ -13150 -1950
-Wire Wire Line
-	-17000 650  -17000 450 
-Wire Wire Line
-	-17750 650  -17750 450 
-Wire Wire Line
-	-12200 -1950 -12200 -1700
-Wire Wire Line
-	-12200 -1700 -11650 -1700
-Wire Wire Line
-	-11650 -1700 -11650 150 
-Wire Wire Line
-	-11650 150  -13150 150 
-Wire Wire Line
-	-13150 150  -13150 750 
-Wire Wire Line
-	-12250 -350 -12250 150 
-Connection ~ -12250 150 
-Wire Wire Line
-	-11800 -850 -11400 -850
-Wire Wire Line
-	-11400 -850 -11400 -1000
-Wire Wire Line
-	-11750 -2450 -11450 -2450
-Wire Wire Line
-	-11450 -2450 -11450 -2700
-Wire Wire Line
-	-14600 -3450 -14600 -3600
-Wire Wire Line
-	-14600 -3600 -17750 -3600
-Connection ~ -17750 -2850
-Wire Wire Line
-	-18350 1700 -19100 1700
-Wire Wire Line
-	-17200 1700 -16450 1700
-Wire Wire Line
-	-15050 1700 -14300 1700
-Wire Wire Line
-	-12900 1700 -12300 1700
-Wire Wire Line
-	-11150 1700 -10200 1700
-Wire Wire Line
-	-10200 1700 -10200 1350
-Wire Wire Line
-	-18350 3100 -19100 3100
-Wire Wire Line
-	-17200 3100 -16450 3100
-Wire Wire Line
-	-15050 3100 -14300 3100
-Wire Wire Line
-	-12900 3100 -12300 3100
-Wire Wire Line
-	-11150 3100 -10200 3100
-Wire Wire Line
-	-10200 3100 -10200 2750
-Wire Wire Line
-	-12700 4900 -12050 4900
-Wire Wire Line
-	-17850 4850 -18150 4850
-Wire Wire Line
-	-17850 4950 -18150 4950
-Wire Wire Line
-	-12050 4900 -12050 4550
-Wire Wire Line
-	-14000 -2650 -14000 -2500
-Connection ~ -14000 -2500
-Wire Wire Line
-	-14000 -950 -14000 -700
-Connection ~ -14000 -700
-Wire Wire Line
-	-15750 4950 -16700 4950
-Wire Wire Line
-	-16700 4850 -15750 4850
-Wire Wire Line
-	-13850 4900 -14850 4900
 $Comp
 L d_xnor U202
 U 1 1 6341C37A
@@ -563,4 +430,239 @@ F 3 "" H -15300 4950 60  0000 C CNN
 	1    -15300 4950
 	1    0    0    -1  
 $EndComp
+$Comp
+L adc_bridge_1 U301
+U 1 1 634274D1
+P -6850 -2450
+F 0 "U301" H -6850 -2450 60  0000 C CNN
+F 1 "adc_bridge_1" H -6850 -2300 60  0000 C CNN
+F 2 "" H -6850 -2450 60  0000 C CNN
+F 3 "" H -6850 -2450 60  0000 C CNN
+	1    -6850 -2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L vinayak_frequency_divider U302
+U 1 1 63427562
+P -8050 -600
+F 0 "U302" H -5200 1200 60  0000 C CNN
+F 1 "vinayak_frequency_divider" H -5200 1400 60  0000 C CNN
+F 2 "" H -5200 1350 60  0000 C CNN
+F 3 "" H -5200 1350 60  0000 C CNN
+	1    -8050 -600
+	1    0    0    -1  
+$EndComp
+$Comp
+L dac_bridge_1 U303
+U 1 1 63427679
+P -3650 -2450
+F 0 "U303" H -3650 -2450 60  0000 C CNN
+F 1 "dac_bridge_1" H -3650 -2300 60  0000 C CNN
+F 2 "" H -3650 -2450 60  0000 C CNN
+F 3 "" H -3650 -2450 60  0000 C CNN
+	1    -3650 -2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U305
+U 1 1 6342ABC3
+P -2900 -2850
+F 0 "U305" H -2900 -2350 60  0000 C CNN
+F 1 "plot_v1" H -2700 -2500 60  0000 C CNN
+F 2 "" H -2900 -2850 60  0000 C CNN
+F 3 "" H -2900 -2850 60  0000 C CNN
+	1    -2900 -2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U304
+U 1 1 6342AC54
+P -7500 -2750
+F 0 "U304" H -7500 -2250 60  0000 C CNN
+F 1 "plot_v1" H -7300 -2400 60  0000 C CNN
+F 2 "" H -7500 -2750 60  0000 C CNN
+F 3 "" H -7500 -2750 60  0000 C CNN
+	1    -7500 -2750
+	1    0    0    -1  
+$EndComp
+Text GLabel -7500 -2850 2    60   Input ~ 0
+freqIn
+Text GLabel -2900 -2950 0    60   Output ~ 0
+frepOUT
+Connection ~ -7500 -2500
+Wire Wire Line
+	-7500 -2950 -7500 -2500
+Wire Wire Line
+	-2900 -2500 -2900 -3050
+Wire Wire Line
+	-3100 -2500 -2900 -2500
+Wire Wire Line
+	-7800 -2500 -7450 -2500
+Wire Wire Line
+	-4500 -2500 -4250 -2500
+Wire Wire Line
+	-6300 -2500 -5900 -2500
+Wire Wire Line
+	-13850 4900 -14850 4900
+Wire Wire Line
+	-16700 4850 -15750 4850
+Wire Wire Line
+	-15750 4950 -16700 4950
+Connection ~ -14000 -700
+Wire Wire Line
+	-14000 -950 -14000 -700
+Connection ~ -14000 -2500
+Wire Wire Line
+	-14000 -2650 -14000 -2500
+Wire Wire Line
+	-12050 4900 -12050 4550
+Wire Wire Line
+	-17850 4950 -18150 4950
+Wire Wire Line
+	-17850 4850 -18150 4850
+Wire Wire Line
+	-12700 4900 -12050 4900
+Wire Wire Line
+	-10200 3100 -10200 2750
+Wire Wire Line
+	-11150 3100 -10200 3100
+Wire Wire Line
+	-12900 3100 -12300 3100
+Wire Wire Line
+	-15050 3100 -14300 3100
+Wire Wire Line
+	-17200 3100 -16450 3100
+Wire Wire Line
+	-18350 3100 -19100 3100
+Wire Wire Line
+	-10200 1700 -10200 1350
+Wire Wire Line
+	-11150 1700 -10200 1700
+Wire Wire Line
+	-12900 1700 -12300 1700
+Wire Wire Line
+	-15050 1700 -14300 1700
+Wire Wire Line
+	-17200 1700 -16450 1700
+Wire Wire Line
+	-18350 1700 -19100 1700
+Connection ~ -17750 -2850
+Wire Wire Line
+	-14600 -3600 -17750 -3600
+Wire Wire Line
+	-14600 -3450 -14600 -3600
+Wire Wire Line
+	-11450 -2450 -11450 -2700
+Wire Wire Line
+	-11750 -2450 -11450 -2450
+Wire Wire Line
+	-11400 -850 -11400 -1000
+Wire Wire Line
+	-11800 -850 -11400 -850
+Connection ~ -12250 150 
+Wire Wire Line
+	-12250 -350 -12250 150 
+Wire Wire Line
+	-13150 150  -13150 750 
+Wire Wire Line
+	-11650 150  -13150 150 
+Wire Wire Line
+	-11650 -1700 -11650 150 
+Wire Wire Line
+	-12200 -1700 -11650 -1700
+Wire Wire Line
+	-12200 -1950 -12200 -1700
+Wire Wire Line
+	-17750 650  -17750 450 
+Wire Wire Line
+	-17000 650  -17000 450 
+Connection ~ -13150 -1950
+Wire Wire Line
+	-13150 -350 -13150 -1950
+Wire Wire Line
+	-12500 -350 -13150 -350
+Wire Wire Line
+	-17000 -1950 -17000 -450
+Wire Wire Line
+	-12450 -1950 -17000 -1950
+Connection ~ -13350 -2850
+Wire Wire Line
+	-13350 -1400 -13350 -2850
+Wire Wire Line
+	-12500 -1400 -13350 -1400
+Wire Wire Line
+	-12500 -1250 -12500 -1400
+Wire Wire Line
+	-17750 -3600 -17750 -450
+Wire Wire Line
+	-17750 -2850 -12450 -2850
+Connection ~ -14600 -2500
+Wire Wire Line
+	-13050 -2500 -14600 -2500
+Connection ~ -14600 -700
+Wire Wire Line
+	-13100 -700 -14600 -700
+Connection ~ -13500 -2300
+Wire Wire Line
+	-13500 -900 -13500 -2300
+Wire Wire Line
+	-13100 -900 -13500 -900
+Connection ~ -18550 -1050
+Wire Wire Line
+	-18800 -1050 -18550 -1050
+Wire Wire Line
+	-18550 -2300 -18550 -450
+Wire Wire Line
+	-13050 -2300 -18550 -2300
+Wire Wire Line
+	-18550 650  -18550 450 
+Wire Wire Line
+	-14600 -1900 -14600 -2850
+Wire Wire Line
+	-14600 -200 -14600 -1300
+Connection ~ -15200 750 
+Wire Wire Line
+	-14600 750  -15200 750 
+Wire Wire Line
+	-14600 400  -14600 750 
+Connection ~ -15200 100 
+Wire Wire Line
+	-14800 100  -15200 100 
+Connection ~ -15200 -1600
+Wire Wire Line
+	-14800 -1600 -15200 -1600
+Wire Wire Line
+	-15200 -3150 -14800 -3150
+Wire Wire Line
+	-15200 1150 -15200 -3150
+$Comp
+L eSim_GND #PWR06
+U 1 1 6342EA90
+P -7800 -1600
+F 0 "#PWR06" H -7800 -1850 50  0001 C CNN
+F 1 "eSim_GND" H -7800 -1750 50  0000 C CNN
+F 2 "" H -7800 -1600 50  0001 C CNN
+F 3 "" H -7800 -1600 50  0001 C CNN
+	1    -7800 -1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L sine v303
+U 1 1 6342E9B9
+P -7800 -2050
+F 0 "v303" H -8000 -1950 60  0000 C CNN
+F 1 "sine" H -8000 -2100 60  0000 C CNN
+F 2 "R1" H -8100 -2050 60  0000 C CNN
+F 3 "" H -7800 -2050 60  0000 C CNN
+	1    -7800 -2050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	-9150 -4950 -9150 6300
+Wire Notes Line
+	-9150 6300 -20250 6300
+Wire Notes Line
+	-20250 6300 -20250 -4950
+Wire Notes Line
+	-20250 -4950 -9150 -4950
 $EndSCHEMATC
