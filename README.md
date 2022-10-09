@@ -1,5 +1,8 @@
 <h1 align="center"> Self Correcting Message System<br>using Hamming Code </h1>
 
+![Size](https://img.shields.io/github/repo-size/malivinayak/Self-Correcting-Message-System-using-Hamming-Code?color=blue)
+![tool](https://img.shields.io/badge/Tools-eSim_&_sky130-28A745)
+
 ## Table of Contents
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
