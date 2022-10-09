@@ -239,63 +239,63 @@ window02
 $Comp
 L adc_bridge_1 U101
 U 1 1 63418934
-P -10950 -5400
-F 0 "U101" H -10950 -5400 60  0000 C CNN
-F 1 "adc_bridge_1" H -10950 -5250 60  0000 C CNN
-F 2 "" H -10950 -5400 60  0000 C CNN
-F 3 "" H -10950 -5400 60  0000 C CNN
-	1    -10950 -5400
+P -10900 -5500
+F 0 "U101" H -10900 -5500 60  0000 C CNN
+F 1 "adc_bridge_1" H -10900 -5350 60  0000 C CNN
+F 2 "" H -10900 -5500 60  0000 C CNN
+F 3 "" H -10900 -5500 60  0000 C CNN
+	1    -10900 -5500
 	1    0    0    -1  
 $EndComp
 $Comp
 L vinayak_inverter U102
 U 1 1 6341898B
-P -11800 -3550
-F 0 "U102" H -8950 -1750 60  0000 C CNN
-F 1 "vinayak_inverter" H -8950 -1550 60  0000 C CNN
-F 2 "" H -8950 -1600 60  0000 C CNN
-F 3 "" H -8950 -1600 60  0000 C CNN
-	1    -11800 -3550
+P -11750 -3650
+F 0 "U102" H -8900 -1850 60  0000 C CNN
+F 1 "vinayak_inverter" H -8900 -1650 60  0000 C CNN
+F 2 "" H -8900 -1700 60  0000 C CNN
+F 3 "" H -8900 -1700 60  0000 C CNN
+	1    -11750 -3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L vinayak_inverter U103
 U 1 1 63418A56
-P -9650 -3550
-F 0 "U103" H -6800 -1750 60  0000 C CNN
-F 1 "vinayak_inverter" H -6800 -1550 60  0000 C CNN
-F 2 "" H -6800 -1600 60  0000 C CNN
-F 3 "" H -6800 -1600 60  0000 C CNN
-	1    -9650 -3550
+P -9600 -3650
+F 0 "U103" H -6750 -1850 60  0000 C CNN
+F 1 "vinayak_inverter" H -6750 -1650 60  0000 C CNN
+F 2 "" H -6750 -1700 60  0000 C CNN
+F 3 "" H -6750 -1700 60  0000 C CNN
+	1    -9600 -3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L dac_bridge_1 U104
 U 1 1 63418A6C
-P -4900 -5400
-F 0 "U104" H -4900 -5400 60  0000 C CNN
-F 1 "dac_bridge_1" H -4900 -5250 60  0000 C CNN
-F 2 "" H -4900 -5400 60  0000 C CNN
-F 3 "" H -4900 -5400 60  0000 C CNN
-	1    -4900 -5400
+P -4850 -5500
+F 0 "U104" H -4850 -5500 60  0000 C CNN
+F 1 "dac_bridge_1" H -4850 -5350 60  0000 C CNN
+F 2 "" H -4850 -5500 60  0000 C CNN
+F 3 "" H -4850 -5500 60  0000 C CNN
+	1    -4850 -5500
 	1    0    0    -1  
 $EndComp
 $Comp
 L plot_v1 U105
 U 1 1 63418B63
-P -3400 -5600
-F 0 "U105" H -3400 -5100 60  0000 C CNN
-F 1 "plot_v1" H -3200 -5250 60  0000 C CNN
-F 2 "" H -3400 -5600 60  0000 C CNN
-F 3 "" H -3400 -5600 60  0000 C CNN
-	1    -3400 -5600
+P -3350 -5700
+F 0 "U105" H -3350 -5200 60  0000 C CNN
+F 1 "plot_v1" H -3150 -5350 60  0000 C CNN
+F 2 "" H -3350 -5700 60  0000 C CNN
+F 3 "" H -3350 -5700 60  0000 C CNN
+	1    -3350 -5700
 	1    0    0    -1  
 $EndComp
-Text GLabel -12300 -5450 0    60   Input ~ 0
+Text GLabel -12250 -5550 0    60   Input ~ 0
 window01
 Text GLabel -12300 -4050 0    60   Input ~ 0
 window02
-Text GLabel -3400 -5700 0    60   Input ~ 0
+Text GLabel -3350 -5800 0    60   Input ~ 0
 winv01
 $Comp
 L adc_bridge_1 U106
@@ -828,17 +828,17 @@ Wire Wire Line
 Wire Wire Line
 	-11550 -4050 -12300 -4050
 Wire Wire Line
-	-3400 -5450 -3400 -5800
+	-3350 -5550 -3350 -5900
 Wire Wire Line
-	-4350 -5450 -3400 -5450
+	-4300 -5550 -3350 -5550
 Wire Wire Line
-	-6100 -5450 -5500 -5450
+	-6050 -5550 -5450 -5550
 Wire Wire Line
-	-8250 -5450 -7500 -5450
+	-8200 -5550 -7450 -5550
 Wire Wire Line
-	-10400 -5450 -9650 -5450
+	-10350 -5550 -9600 -5550
 Wire Wire Line
-	-11550 -5450 -12300 -5450
+	-11500 -5550 -12250 -5550
 Connection ~ -20500 -5700
 Wire Wire Line
 	-17350 -6450 -20500 -6450
@@ -1478,4 +1478,24 @@ Wire Wire Line
 	-19950 2800 -19950 3150
 Wire Wire Line
 	-19950 3150 -20250 3150
+Wire Notes Line
+	-22500 1400 -1650 1400
+Wire Notes Line
+	-1650 -7250 -1650 4950
+Wire Notes Line
+	-1650 -7250 -22500 -7250
+Wire Notes Line
+	-22500 -7250 -22500 4950
+Wire Notes Line
+	-22500 -1250 -1650 -1250
+Wire Notes Line
+	-13250 -7250 -13250 -1250
+Wire Notes Line
+	-1650 -5000 -13250 -5000
+Wire Notes Line
+	-13250 -3100 -1650 -3100
+Wire Notes Line
+	-22500 4950 -1650 4950
+Wire Notes Line
+	-12800 1400 -12800 4950
 $EndSCHEMATC
