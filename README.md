@@ -13,7 +13,17 @@
   - [Thought / Concept](#thought--concept)
 - [Circuit Design using eSim](#circuit-design-using-esim)
   - [Self Correcting Message System](#self-correcting-message-system)
+  - [1. Window Comparator](#1-window-comparator)
+  - [2. XNOR of Window Comparator output](#2-xnor-of-window-comparator-output)
+  - [3. Frequency Divider and pulse generator](#3-frequency-divider-and-pulse-generator)
+  - [4. Hamming Code Encoder](#4-hamming-code-encoder)
+  - [5. Hamming Code Decoder](#5-hamming-code-decoder)
 - [Waveforms](#waveforms)
+  - [1. Window Comparator](#1-window-comparator-1)
+  - [2. XNOR of Window Comparator Inverted output](#2-xnor-of-window-comparator-inverted-output)
+  - [3. Frequency Divider and pulse generator](#3-frequency-divider-and-pulse-generator-1)
+  - [4. Hamming Code Encoder](#4-hamming-code-encoder-1)
+  - [5. Hamming Code Decoder](#5-hamming-code-decoder-1)
 - [Software Tools Used](#software-tools-used)
 - [Acknowlegdements](#acknowlegdements)
   - [Social media IDs:](#social-media-ids)
@@ -53,33 +63,37 @@ Self-Correcting message system works for each 11 bits data which are further con
 
 <br>
 
-1. Window Comparator
+### 1. Window Comparator
 
 <img align="center" src="./img/Circuit/window%20comparator.jpg" alt="Window Comparator">
-
+- [Click Here To See Output Waveform](#1-window-comparator)
 <br>
 
-2. XNOR of Window Comparator output
+### 2. XNOR of Window Comparator output
 
 <img align="center" src="./img/Circuit/xnor%20of%20WC%20INV%20output.jpg" alt="XNOR of Window Comparator output">
+  - [Click Here To See Output Waveform](#2-xnor-of-window-comparator-output)
 
 <br>
 
-3. Frequency Divider and pulse generator
+### 3. Frequency Divider and pulse generator
 
 <img align="center" src="./img/Circuit/Freq%20Divider%20and%20pulse%20generator.jpg" alt="Frequency Divider and pulse generator">
+  - [Click Here To See Output Waveform](#3-frequency-divider-and-pulse-generator)
 
 <br>
 
-4. Hamming Code Encoder
+### 4. Hamming Code Encoder
 
 <img align="center" src="./img/Circuit/Hamming%20Code%20Encoder.jpg" alt="Hamming Code Encoder">
+  - [Click Here To See Output Waveform](#4-hamming-code-encoder)
 
 <br>
 
-5. Hamming Code Decoder
+### 5. Hamming Code Decoder
 
 <img align="center" src="./img/Circuit/Hamming%20Code%20Decoder.jpg" alt="Hamming Code Decoder">
+  - [Click Here To See Output Waveform](#5-hamming-code-decoder)
 
 <br>
 
@@ -88,31 +102,31 @@ Self-Correcting message system works for each 11 bits data which are further con
 
 <br>
 
-1. Window Comparator
+### 1. Window Comparator
 
 <img align="center" src="./img/Waveform/window%20comparator.svg" alt="Window Comparator">
 
 <br>
 
-2. XNOR of Window Comparator Inverted output
+### 2. XNOR of Window Comparator Inverted output
 
 <img align="center" src="./img/Waveform/XNOR%20and%20WC%20INV%20output.svg" alt="XNOR of Window Comparator output">
 
 <br>
 
-3. Frequency Divider and pulse generator
+### 3. Frequency Divider and pulse generator
 
 <img align="center" src="./img/Waveform/Freq%20Divider%208%20.svg" alt="Frequency Divider and pulse generator">
 
 <br>
 
-4. Hamming Code Encoder
+### 4. Hamming Code Encoder
 
 <img align="center" src="./img/Waveform/Haming%20Encoder%20Output.svg" alt="Hamming Code Encoder">
 
 <br>
 
-5. Hamming Code Decoder
+### 5. Hamming Code Decoder
 
 <img align="center" src="./img/Waveform/Haming%20Decoder%20output.svg" alt="Hamming Code Decoder">
 
