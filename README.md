@@ -26,7 +26,7 @@
   - [5. Hamming Code Decoder](#5-hamming-code-decoder-1)
 - [Software Tools Used](#software-tools-used)
 - [Acknowlegdements](#acknowlegdements)
-  - [Social media IDs:](#social-media-ids)
+  - [Social media IDs](#social-media-ids)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -175,7 +175,7 @@ Self-Correcting message system works for each 11 bits data which are further con
 5. [Chips to Startup (C2S)](https://www.c2s.gov.in/)
 6. [Google](https://www.google.co.in/)
 
-### Social media IDs:
+### Social media IDs
 SPOKEN TUTORIAL: https://spoken-tutorial.org/ \
 SLACK: https://join.slack.com/t/fossee-iitbombay/shared_invite/zt-1hjcs4lxf-iJbNRcnmtfXYOc9ahEvp1g \
 FACEBOOK: https://www.facebook.com/FOSSEENMEICT/ \
