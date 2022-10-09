@@ -9,7 +9,8 @@
 ## Waveforms
 
 * Hamming Encoder Data Bits
-![Hamming Encoder Output](https://user-images.githubusercontent.com/66154908/194748487-ac0b8cb4-d059-40a0-9f01-60d406693db1.jpg)
+![Hamming Encoder Output](https://user-images.githubusercontent.com/66154908/194748906-7bcb3f5d-7ddc-4167-a585-4aab6b26c9b3.jpg)
+
 
 
 
