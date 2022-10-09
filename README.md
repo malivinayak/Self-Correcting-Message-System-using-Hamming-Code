@@ -77,25 +77,25 @@ Self-Correcting message system works for each 11 bits data which are further con
 
 2. XNOR of Window Comparator Inverted output
 
-<img align="center" src="./img/Circuit/xnor%20of%20WC%20INV%20output.jpg" alt="XNOR of Window Comparator output">
+<img align="center" src="./img/Waveform/XNOR%20and%20WC%20INV%20output.svg" alt="XNOR of Window Comparator output">
 
 <br>
 
 3. Frequency Divider and pulse generator
 
-<img align="center" src="./img/Circuit/Freq%20Divider%20and%20pulse%20generator.jpg" alt="Frequency Divider and pulse generator">
+<img align="center" src="./img/Waveform/Freq%20Divider%208%20.svg" alt="Frequency Divider and pulse generator">
 
 <br>
 
 4. Hamming Code Encoder
 
-<img align="center" src="./img/Circuit/Hamming%20Code%20Encoder.jpg" alt="Hamming Code Encoder">
+<img align="center" src="./img/Waveform/Haming%20Encoder%20Output.svg" alt="Hamming Code Encoder">
 
 <br>
 
 5. Hamming Code Decoder
 
-<img align="center" src="./img/Circuit/Hamming%20Code%20Decoder.jpg" alt="Hamming Code Decoder">
+<img align="center" src="./img/Waveform/Haming%20Decoder%20output.svg" alt="Hamming Code Decoder">
 
 <br>
 
