@@ -90,7 +90,6 @@ a14 [net-_u302-pad2_ ] [frepout ] u303
 run
 print allv > plot_data_v.txt
 print alli > plot_data_i.txt
-plot v(sine) v(in1) v(in2) v(window01)+5 v(window02)+5 v(winv01)+10 v(winv02)+10 v(xnor)+17
-plot v(frepout) v(freqin)
+plot v(freqin) v(frepout)
 .endc
 .end

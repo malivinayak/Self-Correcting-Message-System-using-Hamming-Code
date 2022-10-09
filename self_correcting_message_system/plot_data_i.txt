@@ -1,5 +1,5 @@
 * e:\self\hackathon\mixed_signal_soc_design_marathon\vinayak\self-correcting-message-system-using-hamming-code\self_correcting_message_system\self_correcting_message_system.cir
-Transient Analysis  Sun Oct 09 13:03:58  2022
+Transient Analysis  Sun Oct 09 13:12:11  2022
 --------------------------------------------------------------------------------
 Index   time            a4#branch_1_0   a8#branch_1_0   a9#branch_1_0   
 --------------------------------------------------------------------------------
@@ -6747,7 +6747,7 @@ Index   time            a4#branch_1_0   a8#branch_1_0   a9#branch_1_0
 6411	2.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00	
 
 * e:\self\hackathon\mixed_signal_soc_design_marathon\vinayak\self-correcting-message-system-using-hamming-code\self_correcting_message_system\self_correcting_message_system.cir
-Transient Analysis  Sun Oct 09 13:03:58  2022
+Transient Analysis  Sun Oct 09 13:12:11  2022
 --------------------------------------------------------------------------------
 Index   time            a14#branch_1_0  v01#branch      v02#branch      
 --------------------------------------------------------------------------------
@@ -13495,7 +13495,7 @@ Index   time            a14#branch_1_0  v01#branch      v02#branch
 6411	2.000000e+01	0.000000e+00	-4.80123e-13	-2.83709e-03	
 
 * e:\self\hackathon\mixed_signal_soc_design_marathon\vinayak\self-correcting-message-system-using-hamming-code\self_correcting_message_system\self_correcting_message_system.cir
-Transient Analysis  Sun Oct 09 13:03:58  2022
+Transient Analysis  Sun Oct 09 13:12:11  2022
 --------------------------------------------------------------------------------
 Index   time            v03#branch      v303#branch     
 --------------------------------------------------------------------------------
