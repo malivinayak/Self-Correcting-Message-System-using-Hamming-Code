@@ -33,9 +33,10 @@ Self-Correcting message system works for each 11 bits data which are further con
 > 
 > <br>
 > 1. <b>Extended Hamming Code Technique for (15+1,11)</b> <br>
-> For creation of the algorithm or logic behind the Extended Hamming Code with 11 data bits and 4 parity bit checks on 11 data bits along with 1 one complete parity **matrix** approach is used
+> For creation of the algorithm or logic behind the Extended Hamming Code with 11 data bits and 4 parity bit checks on 11 data bits along with 1 one complete parity <b>matrix</b> approach is used
 > <br>
-> <img align="center" src="https://user-images.githubusercontent.com/66154908/194774606-10669579-76a4-459b-8940-5d5f279436c2.png" alt="Extended Hamming Code Technique for (15+1,11)"  width="200">
+>  <br>
+> <img src="https://user-images.githubusercontent.com/66154908/194774606-10669579-76a4-459b-8940-5d5f279436c2.png" alt="Extended Hamming Code Technique for (15+1,11)" width="250" align="center">
 > 
 > <br>
 > 
