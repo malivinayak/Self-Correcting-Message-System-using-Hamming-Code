@@ -1,6 +1,6 @@
 * E:\Self\Hackathon\Mixed_Signal_SoC_Design_Marathon\Vinayak\Self-Correcting-Message-System-using-Hamming-Code\self_correcting_message_system\self_correcting_message_system.cir
 
-* EESchema Netlist Version 1.1 (Spice format) creation date: 10/09/22 14:33:38
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/09/22 21:28:21
 
 * To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
 * To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
@@ -39,7 +39,7 @@ U303  Net-_U302-Pad2_ freqOUT dac_bridge_1
 U305  freqOUT plot_v1		
 U304  freqIn plot_v1		
 v303  freqIn GND sine		
-U401  winv02 GND XNOR winv02 freqOUT winv01 GND winv01 Net-_U401-Pad9_ Net-_U401-Pad10_ Net-_U401-Pad11_ Net-_U401-Pad12_ Net-_U401-Pad13_ Net-_U401-Pad14_ Net-_U401-Pad15_ Net-_U401-Pad16_ adc_bridge_8		
+U401  winv02 GND XNOR winv02 freqOUT winv01 clk winv01 Net-_U401-Pad9_ Net-_U401-Pad10_ Net-_U401-Pad11_ Net-_U401-Pad12_ Net-_U401-Pad13_ Net-_U401-Pad14_ Net-_U401-Pad15_ Net-_U401-Pad16_ adc_bridge_8		
 U402  XNOR freqOUT GND Net-_U402-Pad4_ Net-_U402-Pad5_ Net-_U402-Pad6_ adc_bridge_3		
 U404  Net-_U403-Pad12_ Net-_U403-Pad13_ Net-_U403-Pad14_ Net-_U403-Pad15_ Net-_U403-Pad16_ Net-_U403-Pad17_ Net-_U403-Pad18_ Net-_U403-Pad19_ D15 D14 D13 D12 D11 D10 D9 D8 dac_bridge_8		
 U405  Net-_U403-Pad20_ Net-_U403-Pad21_ Net-_U403-Pad22_ Net-_U403-Pad23_ Net-_U403-Pad24_ Net-_U403-Pad25_ Net-_U403-Pad26_ Net-_U403-Pad27_ D7 D6 D5 P0 P1 P2 P3 P4 dac_bridge_8		
@@ -59,6 +59,29 @@ U4013  D13 plot_v1
 U4012  D12 plot_v1		
 U4011  D11 plot_v1		
 U4010  D10 plot_v1		
+v501  clk GND pulse		
+U502  clk plot_v1		
 U403  Net-_U401-Pad9_ Net-_U401-Pad10_ Net-_U401-Pad11_ Net-_U401-Pad12_ Net-_U401-Pad13_ Net-_U401-Pad14_ Net-_U401-Pad15_ Net-_U401-Pad16_ Net-_U402-Pad4_ Net-_U402-Pad5_ Net-_U402-Pad6_ Net-_U403-Pad12_ Net-_U403-Pad13_ Net-_U403-Pad14_ Net-_U403-Pad15_ Net-_U403-Pad16_ Net-_U403-Pad17_ Net-_U403-Pad18_ Net-_U403-Pad19_ Net-_U403-Pad20_ Net-_U403-Pad21_ Net-_U403-Pad22_ Net-_U403-Pad23_ Net-_U403-Pad24_ Net-_U403-Pad25_ Net-_U403-Pad26_ Net-_U403-Pad27_ vinayak_hamming_ecoder		
+U603  Net-_U601-Pad9_ Net-_U601-Pad10_ Net-_U601-Pad11_ Net-_U601-Pad12_ Net-_U601-Pad13_ Net-_U601-Pad14_ Net-_U601-Pad15_ Net-_U601-Pad16_ Net-_U602-Pad9_ Net-_U602-Pad10_ Net-_U602-Pad11_ Net-_U602-Pad12_ Net-_U602-Pad13_ Net-_U602-Pad14_ Net-_U602-Pad15_ Net-_U602-Pad16_ Net-_U603-Pad17_ Net-_U603-Pad18_ Net-_U603-Pad19_ Net-_U603-Pad20_ Net-_U603-Pad21_ Net-_U603-Pad22_ Net-_U603-Pad23_ Net-_U603-Pad24_ Net-_U603-Pad25_ Net-_U603-Pad26_ Net-_U603-Pad27_ Net-_U603-Pad28_ Net-_U603-Pad29_ Net-_U603-Pad30_ Net-_U603-Pad31_ Net-_U603-Pad32_ vinayak_hamming_decoder		
+U601  D15 D14 D13 D12 D11 D10 D9 P4 Net-_U601-Pad9_ Net-_U601-Pad10_ Net-_U601-Pad11_ Net-_U601-Pad12_ Net-_U601-Pad13_ Net-_U601-Pad14_ Net-_U601-Pad15_ Net-_U601-Pad16_ adc_bridge_8		
+U602  D8 D7 D6 P3 D5 P2 P1 P0 Net-_U602-Pad9_ Net-_U602-Pad10_ Net-_U602-Pad11_ Net-_U602-Pad12_ Net-_U602-Pad13_ Net-_U602-Pad14_ Net-_U602-Pad15_ Net-_U602-Pad16_ adc_bridge_8		
+U604  Net-_U603-Pad17_ Net-_U603-Pad18_ Net-_U603-Pad19_ Net-_U603-Pad20_ Net-_U603-Pad21_ Net-_U603-Pad22_ Net-_U603-Pad23_ Net-_U603-Pad24_ parity0 pari3 pari2 pari1 pari0 CD10 CD9 CD8 dac_bridge_8		
+U605  Net-_U603-Pad25_ Net-_U603-Pad26_ Net-_U603-Pad27_ Net-_U603-Pad28_ Net-_U603-Pad29_ Net-_U603-Pad30_ Net-_U603-Pad31_ Net-_U603-Pad32_ CD7 CD6 CD5 CD4 CD3 CD2 CD1 CD0 dac_bridge_8		
+U606  CD0 plot_v1		
+U607  CD1 plot_v1		
+U608  CD2 plot_v1		
+U609  CD3 plot_v1		
+U610  CD4 plot_v1		
+U611  CD5 plot_v1		
+U612  CD6 plot_v1		
+U613  CD7 plot_v1		
+U614  CD8 plot_v1		
+U615  CD9 plot_v1		
+U621  parity0 plot_v1		
+U620  pari3 plot_v1		
+U619  pari2 plot_v1		
+U618  pari1 plot_v1		
+U617  pari0 plot_v1		
+U616  CD10 plot_v1		
 
 .end

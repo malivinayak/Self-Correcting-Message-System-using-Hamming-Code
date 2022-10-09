@@ -41,7 +41,7 @@ v01  sine gnd sine(0 1.8 2 0 0)
 * u305  freqout plot_v1
 * u304  freqin plot_v1
 v303  freqin gnd sine(0 8 2 0 0)
-* u401  winv02 gnd xnor winv02 freqout winv01 gnd winv01 net-_u401-pad9_ net-_u401-pad10_ net-_u401-pad11_ net-_u401-pad12_ net-_u401-pad13_ net-_u401-pad14_ net-_u401-pad15_ net-_u401-pad16_ adc_bridge_8
+* u401  winv02 gnd xnor winv02 freqout winv01 clk winv01 net-_u401-pad9_ net-_u401-pad10_ net-_u401-pad11_ net-_u401-pad12_ net-_u401-pad13_ net-_u401-pad14_ net-_u401-pad15_ net-_u401-pad16_ adc_bridge_8
 * u402  xnor freqout gnd net-_u402-pad4_ net-_u402-pad5_ net-_u402-pad6_ adc_bridge_3
 * u404  net-_u403-pad12_ net-_u403-pad13_ net-_u403-pad14_ net-_u403-pad15_ net-_u403-pad16_ net-_u403-pad17_ net-_u403-pad18_ net-_u403-pad19_ d15 d14 d13 d12 d11 d10 d9 d8 dac_bridge_8
 * u405  net-_u403-pad20_ net-_u403-pad21_ net-_u403-pad22_ net-_u403-pad23_ net-_u403-pad24_ net-_u403-pad25_ net-_u403-pad26_ net-_u403-pad27_ d7 d6 d5 p0 p1 p2 p3 p4 dac_bridge_8
@@ -61,7 +61,30 @@ v303  freqin gnd sine(0 8 2 0 0)
 * u4012  d12 plot_v1
 * u4011  d11 plot_v1
 * u4010  d10 plot_v1
+v501  clk gnd pulse(5 1 0 0 0 1 2)
+* u502  clk plot_v1
 * u403  net-_u401-pad9_ net-_u401-pad10_ net-_u401-pad11_ net-_u401-pad12_ net-_u401-pad13_ net-_u401-pad14_ net-_u401-pad15_ net-_u401-pad16_ net-_u402-pad4_ net-_u402-pad5_ net-_u402-pad6_ net-_u403-pad12_ net-_u403-pad13_ net-_u403-pad14_ net-_u403-pad15_ net-_u403-pad16_ net-_u403-pad17_ net-_u403-pad18_ net-_u403-pad19_ net-_u403-pad20_ net-_u403-pad21_ net-_u403-pad22_ net-_u403-pad23_ net-_u403-pad24_ net-_u403-pad25_ net-_u403-pad26_ net-_u403-pad27_ vinayak_hamming_ecoder
+* u603  net-_u601-pad9_ net-_u601-pad10_ net-_u601-pad11_ net-_u601-pad12_ net-_u601-pad13_ net-_u601-pad14_ net-_u601-pad15_ net-_u601-pad16_ net-_u602-pad9_ net-_u602-pad10_ net-_u602-pad11_ net-_u602-pad12_ net-_u602-pad13_ net-_u602-pad14_ net-_u602-pad15_ net-_u602-pad16_ net-_u603-pad17_ net-_u603-pad18_ net-_u603-pad19_ net-_u603-pad20_ net-_u603-pad21_ net-_u603-pad22_ net-_u603-pad23_ net-_u603-pad24_ net-_u603-pad25_ net-_u603-pad26_ net-_u603-pad27_ net-_u603-pad28_ net-_u603-pad29_ net-_u603-pad30_ net-_u603-pad31_ net-_u603-pad32_ vinayak_hamming_decoder
+* u601  d15 d14 d13 d12 d11 d10 d9 p4 net-_u601-pad9_ net-_u601-pad10_ net-_u601-pad11_ net-_u601-pad12_ net-_u601-pad13_ net-_u601-pad14_ net-_u601-pad15_ net-_u601-pad16_ adc_bridge_8
+* u602  d8 d7 d6 p3 d5 p2 p1 p0 net-_u602-pad9_ net-_u602-pad10_ net-_u602-pad11_ net-_u602-pad12_ net-_u602-pad13_ net-_u602-pad14_ net-_u602-pad15_ net-_u602-pad16_ adc_bridge_8
+* u604  net-_u603-pad17_ net-_u603-pad18_ net-_u603-pad19_ net-_u603-pad20_ net-_u603-pad21_ net-_u603-pad22_ net-_u603-pad23_ net-_u603-pad24_ parity0 pari3 pari2 pari1 pari0 cd10 cd9 cd8 dac_bridge_8
+* u605  net-_u603-pad25_ net-_u603-pad26_ net-_u603-pad27_ net-_u603-pad28_ net-_u603-pad29_ net-_u603-pad30_ net-_u603-pad31_ net-_u603-pad32_ cd7 cd6 cd5 cd4 cd3 cd2 cd1 cd0 dac_bridge_8
+* u606  cd0 plot_v1
+* u607  cd1 plot_v1
+* u608  cd2 plot_v1
+* u609  cd3 plot_v1
+* u610  cd4 plot_v1
+* u611  cd5 plot_v1
+* u612  cd6 plot_v1
+* u613  cd7 plot_v1
+* u614  cd8 plot_v1
+* u615  cd9 plot_v1
+* u621  parity0 plot_v1
+* u620  pari3 plot_v1
+* u619  pari2 plot_v1
+* u618  pari1 plot_v1
+* u617  pari0 plot_v1
+* u616  cd10 plot_v1
 a1 [window01 ] [net-_u101-pad2_ ] u101
 a2 [net-_u101-pad2_ ] [net-_u102-pad2_ ] u102
 a3 [net-_u102-pad2_ ] [net-_u103-pad2_ ] u103
@@ -76,11 +99,16 @@ a11 [net-_u201-pad3_ net-_u201-pad4_ ] net-_u202-pad3_ u202
 a12 [freqin ] [net-_u301-pad2_ ] u301
 a13 [net-_u301-pad2_ ] [net-_u302-pad2_ ] u302
 a14 [net-_u302-pad2_ ] [freqout ] u303
-a15 [winv02 gnd xnor winv02 freqout winv01 gnd winv01 ] [net-_u401-pad9_ net-_u401-pad10_ net-_u401-pad11_ net-_u401-pad12_ net-_u401-pad13_ net-_u401-pad14_ net-_u401-pad15_ net-_u401-pad16_ ] u401
+a15 [winv02 gnd xnor winv02 freqout winv01 clk winv01 ] [net-_u401-pad9_ net-_u401-pad10_ net-_u401-pad11_ net-_u401-pad12_ net-_u401-pad13_ net-_u401-pad14_ net-_u401-pad15_ net-_u401-pad16_ ] u401
 a16 [xnor freqout gnd ] [net-_u402-pad4_ net-_u402-pad5_ net-_u402-pad6_ ] u402
 a17 [net-_u403-pad12_ net-_u403-pad13_ net-_u403-pad14_ net-_u403-pad15_ net-_u403-pad16_ net-_u403-pad17_ net-_u403-pad18_ net-_u403-pad19_ ] [d15 d14 d13 d12 d11 d10 d9 d8 ] u404
 a18 [net-_u403-pad20_ net-_u403-pad21_ net-_u403-pad22_ net-_u403-pad23_ net-_u403-pad24_ net-_u403-pad25_ net-_u403-pad26_ net-_u403-pad27_ ] [d7 d6 d5 p0 p1 p2 p3 p4 ] u405
 a19 [net-_u401-pad9_ net-_u401-pad10_ net-_u401-pad11_ net-_u401-pad12_ net-_u401-pad13_ net-_u401-pad14_ net-_u401-pad15_ net-_u401-pad16_ net-_u402-pad4_ net-_u402-pad5_ net-_u402-pad6_ ] [net-_u403-pad12_ net-_u403-pad13_ net-_u403-pad14_ net-_u403-pad15_ net-_u403-pad16_ net-_u403-pad17_ net-_u403-pad18_ net-_u403-pad19_ net-_u403-pad20_ net-_u403-pad21_ net-_u403-pad22_ ] [net-_u403-pad23_ ] [net-_u403-pad24_ ] [net-_u403-pad25_ ] [net-_u403-pad26_ ] [net-_u403-pad27_ ] u403
+a20 [net-_u601-pad9_ net-_u601-pad10_ net-_u601-pad11_ net-_u601-pad12_ net-_u601-pad13_ net-_u601-pad14_ net-_u601-pad15_ net-_u601-pad16_ net-_u602-pad9_ net-_u602-pad10_ net-_u602-pad11_ net-_u602-pad12_ net-_u602-pad13_ net-_u602-pad14_ net-_u602-pad15_ net-_u602-pad16_ ] [net-_u603-pad17_ ] [net-_u603-pad18_ net-_u603-pad19_ net-_u603-pad20_ net-_u603-pad21_ ] [net-_u603-pad22_ net-_u603-pad23_ net-_u603-pad24_ net-_u603-pad25_ net-_u603-pad26_ net-_u603-pad27_ net-_u603-pad28_ net-_u603-pad29_ net-_u603-pad30_ net-_u603-pad31_ net-_u603-pad32_ ] u603
+a21 [d15 d14 d13 d12 d11 d10 d9 p4 ] [net-_u601-pad9_ net-_u601-pad10_ net-_u601-pad11_ net-_u601-pad12_ net-_u601-pad13_ net-_u601-pad14_ net-_u601-pad15_ net-_u601-pad16_ ] u601
+a22 [d8 d7 d6 p3 d5 p2 p1 p0 ] [net-_u602-pad9_ net-_u602-pad10_ net-_u602-pad11_ net-_u602-pad12_ net-_u602-pad13_ net-_u602-pad14_ net-_u602-pad15_ net-_u602-pad16_ ] u602
+a23 [net-_u603-pad17_ net-_u603-pad18_ net-_u603-pad19_ net-_u603-pad20_ net-_u603-pad21_ net-_u603-pad22_ net-_u603-pad23_ net-_u603-pad24_ ] [parity0 pari3 pari2 pari1 pari0 cd10 cd9 cd8 ] u604
+a24 [net-_u603-pad25_ net-_u603-pad26_ net-_u603-pad27_ net-_u603-pad28_ net-_u603-pad29_ net-_u603-pad30_ net-_u603-pad31_ net-_u603-pad32_ ] [cd7 cd6 cd5 cd4 cd3 cd2 cd1 cd0 ] u605
 * Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
 .model u101 adc_bridge(in_low=0 in_high=1 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
 * Schematic Name:                             vinayak_inverter, NgSpice Name: vinayak_inverter
@@ -119,23 +147,29 @@ a19 [net-_u401-pad9_ net-_u401-pad10_ net-_u401-pad11_ net-_u401-pad12_ net-_u40
 .model u405 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
 * Schematic Name:                             vinayak_hamming_ecoder, NgSpice Name: vinayak_hamming_ecoder
 .model u403 vinayak_hamming_ecoder(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
-.tran 0.1e-00 5e-00 0e-00
+* Schematic Name:                             vinayak_hamming_decoder, NgSpice Name: vinayak_hamming_decoder
+.model u603 vinayak_hamming_decoder(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             adc_bridge_8, NgSpice Name: adc_bridge
+.model u601 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_8, NgSpice Name: adc_bridge
+.model u602 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u604 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u605 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+.tran 0.1e-00 10e-00 0e-00
 
 * Control Statements 
 .control
 run
 print allv > plot_data_v.txt
 print alli > plot_data_i.txt
-plot v(sine)
-plot v(window02)
-plot v(window01)
-plot v(winv01)
-plot v(winv02)
-plot v(xnor)
-plot v(in1)
-plot v(in2)
-plot v(freqout)
-plot v(freqin)
-plot v(p0) v(p1)+7 v(p2)+14 v(p3)+21 v(p4)+28 v(d5)+35 v(d6)+42 v(d7)+49 v(d8)+56 v(d9)+63 v(d10)+70 v(d11)+77 v(d12)+84 v(d13)+91 v(d14)+98 v(d15)+105
+plot v(sine) v(in1) v(in2)
+plot v(window02) v(window01)
+plot v(winv01) v(winv02) v(xnor)+7
+plot v(freqout) v(freqin)
+plot v(p0) v(p1)+7 v(p2)+14 v(p3)+21 v(p4)+28 v(d5)+35 v(d6)+42 v(d7)+49 v(d8)+56 v(d9)+70 v(d10)+77 v(d11)+84 v(d12)+91 v(d13)+98 v(d14)+105 v(d15)+112
+plot v(cd0) v(cd1)+7 v(cd2)+14 v(cd3)+21 v(cd4)+28 v(cd5)+35 v(cd6)+42 v(cd7)+49 v(cd8)+56 v(cd9)+70 v(cd10)+77
+plot v(parity0) v(pari3)+7 v(pari2)+14 v(pari1)+21 v(pari0)+28
 .endc
 .end
