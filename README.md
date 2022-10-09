@@ -14,7 +14,6 @@
   - [Self Correcting Message System](#self-correcting-message-system)
 - [Waveforms](#waveforms)
 - [Software Tools Used](#software-tools-used)
-- [Circuit](#circuit)
 - [Acknowlegdements](#acknowlegdements)
   - [Social media IDs:](#social-media-ids)
 
@@ -127,11 +126,6 @@ Self-Correcting message system works for each 11 bits data which are further con
 6. [SkyWater SKY130 PDK](https://skywater-pdk.rtfd.io/)
 
 > The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at SkyWater’s facility.
-
-## Circuit
-* Hamming Encoder Circuit
-![image](https://user-images.githubusercontent.com/66154908/194748814-c8b815d2-48fe-4598-82af-caf49ff48464.png)
-
 
 
 ## Acknowlegdements
