@@ -10,6 +10,7 @@
 - [Circuit](#circuit)
 - [Waveforms](#waveforms)
 - [Acknowlegdements](#acknowlegdements)
+  - [Social media IDs:](#social-media-ids)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -59,3 +60,11 @@ for correcting any errors.
 4. [Spoken Tutorial](https://spoken-tutorial.org/)
 5. [Chips to Startup (C2S)](https://www.c2s.gov.in/)
 6. [Google](https://www.google.co.in/)
+
+### Social media IDs:
+SPOKEN TUTORIAL: https://spoken-tutorial.org/
+SLACK: https://join.slack.com/t/fossee-iitbombay/shared_invite/zt-1hjcs4lxf-iJbNRcnmtfXYOc9ahEvp1g
+FACEBOOK: https://www.facebook.com/FOSSEENMEICT/
+TWITTER: https://twitter.com/FOSSEE/
+INSTAGRAM: https://www.instagram.com/fossee_nmeict/
+LINKEDIN: https://www.linkedin.com/company/fossee-iitb/
