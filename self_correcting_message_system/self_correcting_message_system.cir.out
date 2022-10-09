@@ -1,4 +1,4 @@
-* c:\users\user\desktop\esim\self_correcting_message_system\self_correcting_message_system.cir
+* e:\self\hackathon\mixed_signal_soc_design_marathon\vinayak\self-correcting-message-system-using-hamming-code\self_correcting_message_system\self_correcting_message_system.cir
 
 .include "C:\FOSSEE\eSim\library\sky130_fd_pr/models/sky130_fd_pr__model__linear.model.spice"
 .lib "C:\FOSSEE\eSim\library\sky130_fd_pr/models/sky130.lib.spice" tt
@@ -8,14 +8,14 @@
 .include "C:\FOSSEE\eSim\library\sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice"
 .include "C:\FOSSEE\eSim\library\sky130_fd_pr/models/sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
 .include avsd_opamp.sub
-xsc01 net-_sc01-pad1_ net-_sc01-pad2_ gnd sky130_fd_pr__res_generic_nd 
-xsc02 net-_sc02-pad1_ net-_sc01-pad1_ gnd sky130_fd_pr__res_generic_nd 
-xsc03 gnd net-_sc02-pad1_ gnd sky130_fd_pr__res_generic_nd 
-x01 net-_sc01-pad2_ net-_x01-pad2_ net-_sc01-pad1_ sine window01 gnd avsd_opamp
-x02 net-_sc01-pad2_ net-_x01-pad2_ sine net-_sc02-pad1_ window02 gnd avsd_opamp
-v02 net-_sc01-pad2_ gnd  dc 2V
-v03 gnd net-_x01-pad2_  dc 2V
-v01  sine gnd sine(0 3 0 0 0)
+xsc01 in1 net-_sc01-pad2_ gnd sky130_fd_pr__res_generic_nd 
+xsc02 in2 in1 gnd sky130_fd_pr__res_generic_nd 
+xsc03 gnd in2 gnd sky130_fd_pr__res_generic_nd 
+x01 net-_sc01-pad2_ net-_x01-pad2_ in1 sine window01 gnd avsd_opamp
+x02 net-_sc01-pad2_ net-_x01-pad2_ sine in2 window02 gnd avsd_opamp
+v02 net-_sc01-pad2_ gnd  dc 1v
+v03 net-_x01-pad2_ gnd  dc -2v
+v01  sine gnd sine(0 1.8 2 0 0)
 * u01  sine plot_v1
 * u03  window02 plot_v1
 * u02  window01 plot_v1
@@ -29,10 +29,12 @@ v01  sine gnd sine(0 3 0 0 0)
 * u108  net-_u107-pad2_ net-_u108-pad2_ vinayak_inverter
 * u109  net-_u108-pad2_ winv02 dac_bridge_1
 * u110  winv02 plot_v1
-* u202  net-_u201-pad3_ net-_u201-pad4_ net-_u202-pad3_ d_xnor
 * u203  net-_u202-pad3_ xnor dac_bridge_1
 * u201  winv01 winv02 net-_u201-pad3_ net-_u201-pad4_ adc_bridge_2
 * u204  xnor plot_v1
+* u04  in1 plot_v1
+* u05  in2 plot_v1
+* u202  net-_u201-pad3_ net-_u201-pad4_ net-_u202-pad3_ d_xnor
 a1 [window01 ] [net-_u101-pad2_ ] u101
 a2 [net-_u101-pad2_ ] [net-_u102-pad2_ ] u102
 a3 [net-_u102-pad2_ ] [net-_u103-pad2_ ] u103
@@ -41,43 +43,38 @@ a5 [window02 ] [net-_u106-pad2_ ] u106
 a6 [net-_u106-pad2_ ] [net-_u107-pad2_ ] u107
 a7 [net-_u107-pad2_ ] [net-_u108-pad2_ ] u108
 a8 [net-_u108-pad2_ ] [winv02 ] u109
-a9 [net-_u201-pad3_ net-_u201-pad4_ ] net-_u202-pad3_ u202
-a10 [net-_u202-pad3_ ] [xnor ] u203
-a11 [winv01 winv02 ] [net-_u201-pad3_ net-_u201-pad4_ ] u201
+a9 [net-_u202-pad3_ ] [xnor ] u203
+a10 [winv01 winv02 ] [net-_u201-pad3_ net-_u201-pad4_ ] u201
+a11 [net-_u201-pad3_ net-_u201-pad4_ ] net-_u202-pad3_ u202
 * Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
-.model u101 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+.model u101 adc_bridge(in_low=0 in_high=1 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
 * Schematic Name:                             vinayak_inverter, NgSpice Name: vinayak_inverter
 .model u102 vinayak_inverter(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
 * Schematic Name:                             vinayak_inverter, NgSpice Name: vinayak_inverter
 .model u103 vinayak_inverter(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
 * Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
-.model u104 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+.model u104 dac_bridge(out_low=0 out_high=5 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
 * Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
-.model u106 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+.model u106 adc_bridge(in_low=0 in_high=1 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
 * Schematic Name:                             vinayak_inverter, NgSpice Name: vinayak_inverter
 .model u107 vinayak_inverter(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
 * Schematic Name:                             vinayak_inverter, NgSpice Name: vinayak_inverter
 .model u108 vinayak_inverter(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
 * Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
-.model u109 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
-* Schematic Name:                             d_xnor, NgSpice Name: d_xnor
-.model u202 d_xnor(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+.model u109 dac_bridge(out_low=0 out_high=5 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
 * Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
 .model u203 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
 * Schematic Name:                             adc_bridge_2, NgSpice Name: adc_bridge
-.model u201 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
-.tran 10e-06 100e-03 0e-03
+.model u201 adc_bridge(in_low=0 in_high=1 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             d_xnor, NgSpice Name: d_xnor
+.model u202 d_xnor(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+.tran 0.1e-00 1e-00 0e-00
 
 * Control Statements 
 .control
 run
 print allv > plot_data_v.txt
 print alli > plot_data_i.txt
-plot v(sine)
-plot v(window02)
-plot v(window01)
-plot v(winv01)
-plot v(winv02)
-plot v(xnor)
+plot v(sine) v(in1) v(in2) v(window01)+5 v(window02)+5 v(winv01)+10 v(winv02)+10 v(xnor)+17
 .endc
 .end
