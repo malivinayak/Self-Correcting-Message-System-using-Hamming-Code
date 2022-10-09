@@ -25,6 +25,18 @@ this system, and if 2 bits get flipped then machine is able to
 detect that 2 errors are present. This system can be also used
 in Compact Disc (CD) and Digital Versatile Disc (DVD)
 
+## Description
+Self-Correcting message system works for each 11
+bits data which are further converted to 16 bits
+which includes 4 bits for redundancy for parity
+check and 1 bit is extended parity check. In this
+design, even parity is considered that is number of
+1’s in data bits is even. Before transmitting the data,
+parity bits are generated for each 11 bit of data and
+transmits the 16 bits of data. And after transmission
+some checks are performed and which can be used
+for correcting any errors.
+
 ## Circuit
 * Hamming Encoder Circuit
 ![image](https://user-images.githubusercontent.com/66154908/194748814-c8b815d2-48fe-4598-82af-caf49ff48464.png)
