@@ -6,6 +6,7 @@
 
 - [Table of Contents](#table-of-contents)
 - [Abstract](#abstract)
+- [Description](#description)
 - [Circuit](#circuit)
 - [Waveforms](#waveforms)
 - [Acknowlegdements](#acknowlegdements)
