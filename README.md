@@ -1,6 +1,4 @@
-# Self-Correcting-Message-System-using-Hamming-Code
-Self-Correcting Message System using Hamming Code
-
+<h1 align="center"> Self Correcting Message System using Hamming Code </h1>
 
 ## Acknowlegdements
 1. FOSSEE, IIT Bombay
