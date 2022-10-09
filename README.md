@@ -9,6 +9,7 @@
 - [Description](#description)
 - [Circuit](#circuit)
 - [Waveforms](#waveforms)
+- [Open-Source Softwares Used](#open-source-softwares-used)
 - [Acknowlegdements](#acknowlegdements)
   - [Social media IDs:](#social-media-ids)
 
@@ -51,7 +52,12 @@ for correcting any errors.
 ![Hamming Encoder Output](https://user-images.githubusercontent.com/66154908/194748906-7bcb3f5d-7ddc-4167-a585-4aab6b26c9b3.jpg)
 
 
-
+## Open-Source Softwares Used
+* [esim](https://esim.fossee.in/downloads)
+* [KiCad](https://www.kicad.org/)
+* [NGHDL](https://github.com/fossee/nghdl/)
+* [Makerchip](https://www.makerchip.com/)
+* [SkyWater SKY130 PDK](https://skywater-pdk.rtfd.io/)
 
 ## Acknowlegdements
 1. [FOSSEE](https://fossee.in/), [IIT Bombay](http://iitb.ac.in/)
