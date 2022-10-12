@@ -55,7 +55,6 @@ Self-Correcting message system works for each 11 bits data which are further con
 
 <img align="center" src="./img/Circuit/Self%20Correcting%20Message%20System.jpg" alt="Image of Self Correcting Message System">
 
-<br>
 
 ### 1. Window Comparator
 
