@@ -150,43 +150,40 @@ Self-Correcting message system works for each 11 bits data which are further con
 
 ## Software Tools Used
 
->
-> <details>	
-> <summary> 1. <a href="https://esim.fossee.in/home">eSim</a> </summary>
->
+
+<details>	
+ <summary> 1. <a href="https://esim.fossee.in/home">eSim</a> </summary>
+
 > eSim is a free and open-sourced EDA tool for circuit design, simulation, analysis and PCB design. It is an integrated tool built using free/libre and open source software such as KiCad, Ngspice, Verilator, makerchip-app, sandpiper-saas and GHDL. eSim is released under GPL.
-> </details>
->
->
->
-> <details>	
-> <summary> 2.  <a href="https://www.kicad.org/">KiCad</a> </summary>
->
+</details>
+
+<details>	
+<summary> 2.  <a href="https://www.kicad.org/">KiCad</a> </summary>
+
 > KiCad's Schematic Editor supports everything from the most basic schematic to a complex hierarchical design with hundreds of sheets. It helps to create our own custom symbols or use some of the thousands found in the official KiCad library. We can verify our design with integrated SPICE simulator and electrical rules checker.
-> </details>
->
->
-> <details>	
-> <summary>  3. <a href="http://ngspice.sourceforge.net/">Ngspice </a>  </summary>
->
+</details>
+
+<details>	
+<summary>  3. <a href="http://ngspice.sourceforge.net/">Ngspice </a>  </summary>
+
 >  Ngspice is a mixed-level/mixed-signal electronic circuit simulator. Ngspice implements three classes of analysis: nonlinear DC analyses, Nonlinear transient analyses, linear AC analyses.
-> </details>
->
-> <details>	
-> <summary>  4. <a href="https://www.veripool.org/verilator/">Verilator </a>  </summary>
->
+</details>
+
+<details>	
+ <summary>  4. <a href="https://www.veripool.org/verilator/">Verilator </a>  </summary>
+
 >  Verilator is a free and open-source software tool which converts Verilog code to a cycle-accurate behavioral model in C++ or SystemC.
-> </details>
->
-> <details>	
-> <summary>  5. <a href="https://www.makerchip.com/">Makerchip </a>  </summary>
->
+</details>
+
+<details>	
+ <summary>  5. <a href="https://www.makerchip.com/">Makerchip </a>  </summary>
+
 >  A web-based IDE that is used to design and simulate digital circuits using Verilog, and the language extension of Verilog, TL-Verilog.  
-> </details>
->
-> <details>	
-> <summary> 6. <a href="https://skywater-pdk.rtfd.io/">SkyWater  KY130 PDK </a> </summary>
->
+</details>
+
+<details>	
+ <summary> 6. <a href="https://skywater-pdk.rtfd.io/">SkyWater  KY130 PDK </a> </summary>
+
 > The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at SkyWater’s facility.
 </details>
 
