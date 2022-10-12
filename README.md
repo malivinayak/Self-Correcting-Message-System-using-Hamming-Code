@@ -14,7 +14,7 @@
 - [Circuit Design & Waveform](#circuit-design--waveform)
   - [Self Correcting Message System](#self-correcting-message-system)
   - [1. Window Comparator](#1-window-comparator)
-  - [2. XNOR of Window Comparator output](#2-xnor-of-window-comparator-output)
+  - [2. XNOR of Window Comparator Inverted output](#2-xnor-of-window-comparator-inverted-output)
   - [3. Frequency Divider and pulse generator](#3-frequency-divider-and-pulse-generator)
   - [4. Hamming Code Encoder](#4-hamming-code-encoder)
   - [5. Hamming Code Decoder](#5-hamming-code-decoder)
@@ -72,7 +72,7 @@ Self-Correcting message system works for each 11 bits data which are further con
 > 
 > </details>
 
-### 2. XNOR of Window Comparator output
+### 2. XNOR of Window Comparator Inverted output
 
 > <details>	
   > <summary> Circuit Diagram </summary>
@@ -85,6 +85,18 @@ Self-Correcting message system works for each 11 bits data which are further con
   > <summary> Output Waveform </summary>
 > 
 > <img align="center" src="./img/Waveform/XNOR%20and%20WC%20INV%20output.svg" alt="XNOR of Window Comparator output">
+> 
+> </details>
+> 
+> <details>	
+  > <summary> Verilog Code for Inverter</summary>
+> 
+> [Click Here to see Program File](./self_correcting_message_system/vinayak_inverter.v)
+> ```
+> module vinayak_inverter(output Y, input A);
+>    not (Y, A);
+>endmodule
+> ```
 > 
 > </details>
 
@@ -103,6 +115,32 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <img align="center" src="./img/Waveform/Freq%20Divider%208%20.svg" alt="Frequency Divider and pulse generator">
 > 
 > </details>
+> 
+> <details>	
+  > <summary> Verilog Code for Frequency_Divider</summary>
+> 
+> [Click Here to see Program File](./self_correcting_message_system/vinayak_frequency_divider.v)
+> ```
+> module vinayak_frequency_divider ( clk,out_clk );
+> 
+> output out_clk;
+> 
+> input clk ;
+> 
+> reg [2:0]m;
+> 
+> initial m = 0;
+> 
+> always @ (negedge (clk)) begin
+ > m <= m + 1;
+> end
+> 
+> assign out_clk = m[2];
+> 
+> endmodule
+> ```
+> 
+> </details>
 
 ### 4. Hamming Code Encoder
 
@@ -117,6 +155,36 @@ Self-Correcting message system works for each 11 bits data which are further con
 >   <summary> Output Waveform </summary>
 > 
 > <img align="center" src="./img/Waveform/Haming%20Encoder%20Output.svg" alt="Hamming Code Encoder">
+> 
+> </details>
+> 
+> <details>	
+  > <summary> Verilog Code for Hamming Code Encoder</summary>
+> 
+> [Click Here to see Program File](./self_correcting_message_system/vinayak_hamming_ecoder.v)
+> ```
+> module vinayak_hamming_ecoder(
+>     input [10:0] data_in,
+>     output [10:0] data_out,
+>     output p0, output p1, output p2, output p3, output p4
+>     );
+>         
+>     wire p_0,p_1,p_2,p_3,p_4;
+>     
+>     assign p_1 = data_in[0] ^ data_in[1] ^ data_in[3] ^ data_in[4] ^ data_in[6] ^ data_in[8] ^ data_in[10];
+>     assign p_2 = data_in[0] ^ data_in[2] ^ data_in[3] ^ data_in[5] ^ data_in[6] ^ data_in[9] ^ data_in[10];
+>     assign p_3 = data_in[1] ^ data_in[2] ^ data_in[3] ^ data_in[7] ^ data_in[8] ^ data_in[9] ^ data_in[10];
+>     assign p_4 = data_in[4] ^ data_in[5] ^ data_in[6] ^ data_in[7] ^ data_in[8] ^ data_in[9] ^ data_in[10];
+>     assign p_0 = data_in[0] ^ data_in[1] ^ data_in[2] ^ data_in[3] ^ data_in[4] ^ data_in[5] ^ data_in[6] ^ data_in[7] ^ data_in[8] ^ data_in[9] ^ data_in[10] ^ p_1 ^ p_2 ^ p_3 ^ p_4 ;
+> 
+>     assign data_out = {data_in};
+>     assign p0 = p_0;
+>     assign p1 = p_1;
+>     assign p2 = p_2;
+>     assign p3 = p_3;
+>     assign p4 = p_4;
+> endmodule
+> ```
 > 
 > </details>
 
@@ -135,8 +203,44 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <img align="center" src="./img/Waveform/Haming%20Decoder%20output.svg" alt="Hamming Code Decoder">
 > 
 > </details>
+> 
+> <details>	
+  > <summary> Verilog Code for Hamming Code Decoder</summary>
+> 
+> [Click Here to see Program File](./self_correcting_message_system/vinayak_hamming_decoder.v)
+> ```
+> module vinayak_hamming_decoder(
+>     input [15:0] data_in,
+>     output parity,
+>     output [3:0] p,
+>     output [10:0] data
+>     );
+> 
+>     assign p[0] = data_in[1] ^ data_in[3] ^ data_in[5] ^ data_in[7] ^ data_in[9] ^ data_in[11]  ^ data_in[13]  ^ data_in[15];
+>     assign p[1] = data_in[2] ^ data_in[3] ^ data_in[6] ^ data_in[7] ^ data_in[10] ^ data_in[11] ^ data_in[14] ^ data_in[15];
+>     assign p[2] = data_in[4] ^ data_in[5] ^ data_in[6] ^ data_in[7] ^ data_in[12] ^ data_in[13] ^ data_in[14] ^ data_in[15];
+>     assign p[3] = data_in[8] ^ data_in[9] ^ data_in[10] ^ data_in[11] ^ data_in[12] ^ data_in[13] ^ data_in[14] ^ data_in[15];
+>     assign parity = data_in[0] ^ data_in[1] ^ data_in[2] ^ data_in[3] ^ data_in[4] ^ data_in[5] ^ data_in[6] ^ data_in[7] ^ data_in[8] ^ data_in[9] ^ data_in[10] ^ data_in[11] ^ data_in[12] ^ data_in[13] ^ data_in[14] ^ data_in[15];
+>     
+>     assign data[0] = data_in[3];
+>     assign data[1] = data_in[5];
+>     assign data[2] = data_in[6];
+>     assign data[3] = data_in[7];
+>     assign data[4] = data_in[9];
+>     assign data[5] = data_in[10];
+>     assign data[6] = data_in[11];
+>     assign data[7] = data_in[12];
+>     assign data[8] = data_in[13];
+>     assign data[9] = data_in[14];
+>     assign data[10] = data_in[15];
+> 
+> endmodule
+> ```
+> 
+> </details>
 
 <br>
+
 
 
 ## Software Tools Used
