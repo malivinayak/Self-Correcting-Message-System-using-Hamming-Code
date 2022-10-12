@@ -59,91 +59,91 @@ Self-Correcting message system works for each 11 bits data which are further con
 
 ### 1. Window Comparator
 
-<details>	
-  <summary> Circuit Diagram </summary>
-
-<img align="center" src="./img/Circuit/window%20comparator.jpg" alt="Window Comparator">
-
-</details>
-
-<details>	
-  <summary> Output Waveform </summary>
-
-<img align="center" src="./img/Waveform/window%20comparator.svg" alt="Window Comparator">
-
-</details>
+> <details>	
+  > <summary> Circuit Diagram </summary>
+> 
+> <img align="center" src="./img/Circuit/window%20comparator.jpg" alt="Window Comparator">
+> 
+> </details>
+> 
+> <details>	
+  > <summary> Output Waveform </summary>
+> 
+> <img align="center" src="./img/Waveform/window%20comparator.svg" alt="Window Comparator">
+> 
+> </details>
 
 <br>
 
 ### 2. XNOR of Window Comparator output
 
-<details>	
-  <summary> Circuit Diagram </summary>
-
-<img align="center" src="./img/Circuit/xnor%20of%20WC%20INV%20output.jpg" alt="XNOR of Window Comparator output">
-
-</details>
-
-<details>	
-  <summary> Output Waveform </summary>
-
-<img align="center" src="./img/Waveform/XNOR%20and%20WC%20INV%20output.svg" alt="XNOR of Window Comparator output">
-
-</details>
+> <details>	
+  > <summary> Circuit Diagram </summary>
+> 
+> <img align="center" src="./img/Circuit/xnor%20of%20WC%20INV%20output.jpg" alt="XNOR of Window Comparator output">
+> 
+> </details>
+> 
+> <details>	
+  > <summary> Output Waveform </summary>
+> 
+> <img align="center" src="./img/Waveform/XNOR%20and%20WC%20INV%20output.svg" alt="XNOR of Window Comparator output">
+> 
+> </details>
 
 <br>
 
 ### 3. Frequency Divider and pulse generator
 
-<details>	
-  <summary> Circuit Diagram </summary>
-
-<img align="center" src="./img/Circuit/Freq%20Divider%20and%20pulse%20generator.jpg" alt="Frequency Divider and pulse generator">
-
-</details>
-
-<details>	
-  <summary> Output Waveform </summary>
-
-<img align="center" src="./img/Waveform/Freq%20Divider%208%20.svg" alt="Frequency Divider and pulse generator">
-
-</details>
+> <details>	
+  > <summary> Circuit Diagram </summary>
+> 
+> <img align="center" src="./img/Circuit/Freq%20Divider%20and%20pulse%20generator.jpg" alt="Frequency Divider and pulse generator">
+> 
+> </details>
+> 
+> <details>	
+>   <summary> Output Waveform </summary>
+> 
+> <img align="center" src="./img/Waveform/Freq%20Divider%208%20.svg" alt="Frequency Divider and pulse generator">
+> 
+> </details>
 
 <br>
 
 ### 4. Hamming Code Encoder
 
-<details>	
-  <summary> Circuit Diagram </summary>
-
-<img align="center" src="./img/Circuit/Hamming%20Code%20Encoder.jpg" alt="Hamming Code Encoder">
-
-</details>
-
-<details>	
-  <summary> Output Waveform </summary>
-
-<img align="center" src="./img/Waveform/Haming%20Encoder%20Output.svg" alt="Hamming Code Encoder">
-
-</details>
+> <details>	
+>   <summary> Circuit Diagram </summary>
+> 
+> <img align="center" src="./img/Circuit/> Hamming%20Code%20Encoder.jpg" alt="Hamming Code > Encoder">
+> 
+> </details>
+> 
+> <details>	
+>   <summary> Output Waveform </summary>
+> 
+> <img align="center" src="./img/Waveform/Haming%20Encoder%20Output.svg" alt="Hamming Code Encoder">
+> 
+> </details>
 
 <br>
 
 ### 5. Hamming Code Decoder
 
-<details>	
-  <summary> Circuit Diagram </summary>
-
-<img align="center" src="./img/Circuit/Hamming%20Code%20Decoder.jpg" alt="Hamming Code Decoder">
-
-</details>
-
-<details>	
-  <summary> Output Waveform </summary>
-
-<img align="center" src="./img/Waveform/Haming%20Decoder%20output.svg" alt="Hamming Code Decoder">
-
-</details>
+> <details>	
+> <summary> Circuit Diagram </summary>
+> 
+> <img align="center" src="./img/Circuit/Hamming%20Code%20Decoder.jpg" alt="Hamming Code Decoder">
+> 
+> </details>
+> 
+> <details>	
+>  <summary> Output Waveform </summary>
+> 
+> <img align="center" src="./img/Waveform/Haming%20Decoder%20output.svg" alt="Hamming Code Decoder">
+> 
+> </details>
 
 <br>
 
@@ -153,27 +153,52 @@ Self-Correcting message system works for each 11 bits data which are further con
 <br>
 
 1. [eSim](https://esim.fossee.in/home) 
-
+>
+> <details>	
+> <summary> Click here Know More </summary>
+>
 > eSim is a free and open-sourced EDA tool for circuit design, simulation, analysis and PCB design. It is an integrated tool built using free/libre and open source software such as KiCad, Ngspice, Verilator, makerchip-app, sandpiper-saas and GHDL. eSim is released under GPL.
+</details>
 
 2. [KiCad](https://www.kicad.org/)
-
+>
+> <details>	
+> <summary> Click here Know More </summary>
+>
 > KiCad's Schematic Editor supports everything from the most basic schematic to a complex hierarchical design with hundreds of sheets. It helps to create our own custom symbols or use some of the thousands found in the official KiCad library. We can verify our design with integrated SPICE simulator and electrical rules checker.
+</details>
 
 3. [Ngspice](http://ngspice.sourceforge.net/)
-
+>
+> <details>	
+> <summary> Click here Know More </summary>
+>
 >  Ngspice is a mixed-level/mixed-signal electronic circuit simulator. Ngspice implements three classes of analysis: nonlinear DC analyses, Nonlinear transient analyses, linear AC analyses.
-   
-4. [Verilator](https://www.veripool.org/verilator/)
+</details>
 
+4. [Verilator](https://www.veripool.org/verilator/)
+>
+> <details>	
+> <summary> Click here Know More </summary>
+>
 >  Verilator is a free and open-source software tool which converts Verilog code to a cycle-accurate behavioral model in C++ or SystemC.
-   
+</details>
+
 5. [Makerchip](https://www.makerchip.com/)
+>
+> <details>	
+> <summary> Click here Know More </summary>
+>
 >  A web-based IDE that is used to design and simulate digital circuits using Verilog, and the language extension of Verilog, TL-Verilog.  
+</details>
 
 6. [SkyWater SKY130 PDK](https://skywater-pdk.rtfd.io/)
-
+>
+> <details>	
+> <summary> Click here Know More </summary>
+>
 > The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at SkyWater’s facility.
+</details>
 
 
 ## Acknowlegdements
