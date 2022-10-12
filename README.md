@@ -73,8 +73,6 @@ Self-Correcting message system works for each 11 bits data which are further con
 > 
 > </details>
 
-<br>
-
 ### 2. XNOR of Window Comparator output
 
 > <details>	
@@ -90,8 +88,6 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <img align="center" src="./img/Waveform/XNOR%20and%20WC%20INV%20output.svg" alt="XNOR of Window Comparator output">
 > 
 > </details>
-
-<br>
 
 ### 3. Frequency Divider and pulse generator
 
@@ -109,8 +105,6 @@ Self-Correcting message system works for each 11 bits data which are further con
 > 
 > </details>
 
-<br>
-
 ### 4. Hamming Code Encoder
 
 > <details>	
@@ -126,8 +120,6 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <img align="center" src="./img/Waveform/Haming%20Encoder%20Output.svg" alt="Hamming Code Encoder">
 > 
 > </details>
-
-<br>
 
 ### 5. Hamming Code Decoder
 
