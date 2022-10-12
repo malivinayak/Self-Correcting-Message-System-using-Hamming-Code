@@ -166,19 +166,19 @@ Self-Correcting message system works for each 11 bits data which are further con
 <details>	
 <summary>  3. <a href="http://ngspice.sourceforge.net/">Ngspice </a>  </summary>
 
->  Ngspice is a mixed-level/mixed-signal electronic circuit simulator. Ngspice implements three classes of analysis: nonlinear DC analyses, Nonlinear transient analyses, linear AC analyses.
+> Ngspice is a mixed-level/mixed-signal electronic circuit simulator. Ngspice implements three classes of analysis: nonlinear DC analyses, Nonlinear transient analyses, linear AC analyses.
 </details>
 
 <details>	
  <summary>  4. <a href="https://www.veripool.org/verilator/">Verilator </a>  </summary>
 
->  Verilator is a free and open-source software tool which converts Verilog code to a cycle-accurate behavioral model in C++ or SystemC.
+> Verilator is a free and open-source software tool which converts Verilog code to a cycle-accurate behavioral model in C++ or SystemC.
 </details>
 
 <details>	
  <summary>  5. <a href="https://www.makerchip.com/">Makerchip </a>  </summary>
 
->  A web-based IDE that is used to design and simulate digital circuits using Verilog, and the language extension of Verilog, TL-Verilog.  
+> A web-based IDE that is used to design and simulate digital circuits using Verilog, and the language extension of Verilog, TL-Verilog.  
 </details>
 
 <details>	
