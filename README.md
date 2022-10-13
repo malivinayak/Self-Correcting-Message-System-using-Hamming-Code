@@ -91,7 +91,7 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <details>	
   > <summary> Verilog Code for Inverter</summary>
 > 
-> [Click Here to see Program File](./self_correcting_message_system/vinayak_inverter.v)
+> > [Click Here to see Program File](./self_correcting_message_system/vinayak_inverter.v)
 > ```
 > module vinayak_inverter(output Y, input A);
 >    not (Y, A);
@@ -119,7 +119,7 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <details>	
   > <summary> Verilog Code for Frequency_Divider</summary>
 > 
-> [Click Here to see Program File](./self_correcting_message_system/vinayak_frequency_divider.v)
+> > [Click Here to see Program File](./self_correcting_message_system/vinayak_frequency_divider.v)
 > ```
 > module vinayak_frequency_divider ( clk,out_clk );
 > 
@@ -161,7 +161,7 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <details>	
   > <summary> Verilog Code for Hamming Code Encoder</summary>
 > 
-> [Click Here to see Program File](./self_correcting_message_system/vinayak_hamming_ecoder.v)
+> > [Click Here to see Program File](./self_correcting_message_system/vinayak_hamming_ecoder.v)
 > ```
 > module vinayak_hamming_ecoder(
 >     input [10:0] data_in,
@@ -207,7 +207,7 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <details>	
   > <summary> Verilog Code for Hamming Code Decoder</summary>
 > 
-> [Click Here to see Program File](./self_correcting_message_system/vinayak_hamming_decoder.v)
+> > [Click Here to see Program File](./self_correcting_message_system/vinayak_hamming_decoder.v)
 > ```
 > module vinayak_hamming_decoder(
 >     input [15:0] data_in,
