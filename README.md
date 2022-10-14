@@ -238,7 +238,7 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <details>	
 > <summary> Explanation </summary>
 > 
-> > Hamming Code decoder original data bits wrt parity bits received with data bits
+> > Hamming Code decoder give output as a original data bits wrt parity bits received with data bits
 > 
 > </details>
 >
