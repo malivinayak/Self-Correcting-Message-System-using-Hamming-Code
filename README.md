@@ -66,11 +66,19 @@ Self-Correcting message system works for each 11 bits data which are further con
 > </details>
 > 
 > <details>	
-  > <summary> Output Waveform </summary>
+  > <summary> Input Waveform </summary>
 > 
 > <img align="center" src="./img/Waveform/window%20comparator.svg" alt="Window Comparator">
 > 
 > </details>
+> 
+> <details>	
+  > <summary> Output Waveform </summary>
+> 
+> <img align="center" src="./img/Waveform/window%20comparator%20Output.svg" alt="Window Comparator">
+> 
+> </details>
+> 
 
 ### 2. XNOR of Window Comparator Inverted output
 
