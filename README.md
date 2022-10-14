@@ -155,7 +155,8 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <details>	
 >   <summary> Explanation </summary>
 > 
-> > Hamming Code Encoder Block is created using verilog Code. Inputs provided for this encoder is as follows
+> > Hamming Code Encoder Block is created using verilog Code. <br>
+> > Inputs provided for this encoder is as follows
 > > > 1. Inverted Window Comparator 2nd Opamp Output 
 > > > 2. Constant 0 bit
 > > > 3. XNOR Output
