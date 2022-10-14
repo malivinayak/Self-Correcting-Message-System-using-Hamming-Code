@@ -236,6 +236,13 @@ Self-Correcting message system works for each 11 bits data which are further con
 ### 5. Hamming Code Decoder
 
 > <details>	
+> <summary> Explanation </summary>
+> 
+> > Hamming Code decoder original data bits wrt parity bits received with data bits
+> 
+> </details>
+>
+> <details>	
 > <summary> Circuit Diagram </summary>
 > 
 > <img align="center" src="./img/Circuit/Hamming%20Code%20Decoder.jpg" alt="Hamming Code Decoder">
