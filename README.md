@@ -153,6 +153,42 @@ Self-Correcting message system works for each 11 bits data which are further con
 ### 4. Hamming Code Encoder
 
 > <details>	
+>   <summary> Explanation </summary>
+> 
+> > Hamming Code Encoder Block is created using verilog Code. Inputs provided for this encoder is as follows
+> > > 1. Inverted Window Comparator 2nd Opamp Output 
+> > > 2. Constant 0 bit
+> > > 3. XNOR Output
+> > > 4. Inverted Window Comparator 2nd Opamp Output 
+> > > 5. Frequency Divider by 8 Output
+> > > 6. Inverted Window Comparator 1st Opamp Output
+> > > 7. Clock Pulse
+> > > 8. Inverted Window Comparator 1st Opamp Output
+> > > 9. XNOR Output
+> > > 10. Frequency Divider by 8 Output 
+> > > 11. Constant 0 bit
+> > >
+> > Output of Hamming Code Encoder is as follows
+> > > 1. Constant 0 bit
+> > > 2. Frequency Divider by 8 Output 
+> > > 3. XNOR Output
+> > > 4. Inverted Window Comparator 1st Opamp Output
+> > > 5. Clock Pulse
+> > > 6. Inverted Window Comparator 1st Opamp Output
+> > > 7. Frequency Divider by 8 Output
+> > > 8. Inverted Window Comparator 2nd Opamp Output 
+> > > 9. XNOR Output
+> > > 10. Constant 0 bit
+> > > 11. Inverted Window Comparator 2nd Opamp Output 
+> > > 12. Extended Hamming COde Parity Bit
+> > > 13. 1st Parity bit
+> > > 14. 2nd Parity Bit
+> > > 15. 3rd Parity Bit
+> > > 16. 4th Parity Bit
+> 
+> </details>
+> 
+> <details>	
 >   <summary> Circuit Diagram </summary>
 > 
 > <img align="center" src="./img/Circuit/Hamming%20Code%20Encoder.jpg" alt="Hamming Code > Encoder">
