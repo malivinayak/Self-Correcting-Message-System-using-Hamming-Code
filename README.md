@@ -238,7 +238,12 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <details>	
 > <summary> Explanation </summary>
 > 
-> > Hamming Code decoder give output as a original data bits wrt parity bits received with data bits
+> > Hamming Code decoder give output as a original data bits wrt parity bits received with data bits.
+> >  Input bits for Hamming Code decoder bloack is output bits of Hamming Code Encoder Block. 
+> > Hamming COde Decoder Circuit Block give output as follows:
+> > > - Is error bit is present or not
+> > > - All parity bits which are calculated from input data bit and parity bit
+> > > - Original Data bits if one bit is corrected among 11 data bit
 > 
 > </details>
 >
