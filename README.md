@@ -155,7 +155,7 @@ Self-Correcting message system works for each 11 bits data which are further con
 > <details>	
 >   <summary> Circuit Diagram </summary>
 > 
-> <img align="center" src="./img/Circuit/> Hamming%20Code%20Encoder.jpg" alt="Hamming Code > Encoder">
+> <img align="center" src="./img/Circuit/Hamming%20Code%20Encoder.jpg" alt="Hamming Code > Encoder">
 > 
 > </details>
 > 
